@@ -1,0 +1,22 @@
+---
+title: "École thématique Sciences de l'information géographique reproductibles"
+---
+
+Ce site contient principalement les liens vers présentations proposées dans les ateliers et cours de l'école thématique SIGR en 2021. 
+
+
+
+## Outils de la recherche reproductible
+
+[Introduction à Mardown pour R]()    
+[Introduction à Xaringan]()    
+[Introduction à git](https://sigr2021.github.io/git/)  
+
+
+## SIG et cartographie
+
+
+## Analyse spatiale
+
+
+## Analyse d'image et télédétection

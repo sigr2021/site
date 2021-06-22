@@ -1,0 +1,8 @@
+name: "my-website"
+navbar:
+  title: "SIGR 2021"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
