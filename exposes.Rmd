@@ -1,9 +1,6 @@
 ---
-title: ""
+title: "Information sur les exposés"
 ---
-
-## Information sur les exposés
-
 
 Chaque fin de journée (16h30 - 18h) sera dédiée à un moment d'échange entre les participants autour de leurs travaux.  
 Vous êtes donc invités à préparer une **brève** présentation (5 minutes maximum). Elle sera suivie d'échanges avec les participants de l'école d'été (5 minutes).  

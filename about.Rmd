@@ -1,5 +1,5 @@
 ---
-title: ""
+title : "À propos de l'école thématique SIGR 2021"
 ---
 
 Cette école thématique est organisée par l’[UMS RIATE](https://tiate.cnrs.fr).  

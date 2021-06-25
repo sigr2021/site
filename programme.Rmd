@@ -1,9 +1,6 @@
 ---
-title : ""
+title: "Programme"
 ---
-
-
-## Programme
 
 ![](img/prog.png)
 

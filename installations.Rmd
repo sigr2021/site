@@ -1,8 +1,7 @@
 ---
-title: ""
+title: "Installation des logiciels"
 ---
 
-## Installation des logiciels
 
 Comme vous le savez, nous utiliserons le logiciel R pour l'ensemble des ateliers. Nous aurons donc besoin d'une **version récente de R** (dans l'idéal la version 4.1.0 et au minimum une version >= à 4.0.0), du logiciel **RStudio** (au minimum une version >= à 1.4.0) et du logiciel **git**.
 
