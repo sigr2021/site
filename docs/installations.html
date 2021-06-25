@@ -11,7 +11,7 @@
 
 
 
-<title>about.knit</title>
+<title>installations.knit</title>
 
 <script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -298,10 +298,51 @@ $(document).ready(function () {
 </div>
 
 
-<p>Cette école thématique est organisée par l’<a href="https://tiate.cnrs.fr">UMS RIATE</a>.<br />
-Son comité scientifique est composé de Claude Grasland (UMR Géographie-cités - Université de Paris), Renaud Le Goix (UMR Géographie-cités - Université de Paris) et Marion Le Texier (UMR IDEES - Université de Rouen Normandie).<br />
-Son responsable scientifique est Timothée Giraud (UMS RIATE - CNRS).</p>
-<p><img title="logo_CNRS_1.png" src="https://sigr2020.sciencesconf.org/data/pages/logo_CNRS_1.png" alt="logo_CNRS_1.png" width="75px" /> <img title="logo_CIST.jpeg" src="https://cist.cnrs.fr/wp-content/uploads/2021/03/cist-logo-bleu_sur_blanc-web.png" alt="logo_CIST.jpeg" width="75px" /> <img title="logo_RIATE.png" src="https://sigr2020.sciencesconf.org/data/pages/logo_RIATE.png" alt="logo_RIATE.png" height="100%"/></p>
+<div id="installation-des-logiciels" class="section level2">
+<h2>Installation des logiciels</h2>
+<p>Comme vous le savez, nous utiliserons le logiciel R pour l’ensemble des ateliers. Nous aurons donc besoin d’une <strong>version récente de R</strong> (dans l’idéal la version 4.1.0 et au minimum une version &gt;= à 4.0.0), du logiciel <strong>RStudio</strong> (au minimum une version &gt;= à 1.4.0) et du logiciel <strong>git</strong>.</p>
+<ul>
+<li><a href="https://cran.r-project.org/">Installation de R</a></li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/#download">Installation de RStudio</a></li>
+<li><a href="https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git">Installation de git</a></li>
+</ul>
+<p>Il est vraiment préférable de télécharger les packages en amont de l’école. Vous trouverez ici un script qui permettra d’installer les package que nous utiliserons cette semaine. Notez que l’installation de ces packages va prendre un certain temps.</p>
+<pre class="r"><code># installer remotes, nous utiliserons remotes pour installer les autres packages
+install.packages(&quot;remotes&quot;)
+
+# les packages du CRAN
+pkgs &lt;- c(&quot;devtools&quot;,
+          &quot;dplyr&quot;, 
+          &quot;fields&quot;,
+          &quot;GGally&quot;, 
+          &quot;gstat&quot;, 
+          &quot;gtsummary&quot;, 
+          &quot;GWmodel&quot;, 
+          &quot;knitr&quot;, 
+          &quot;mapsf&quot;, 
+          &quot;plotly&quot;,
+          &quot;raster&quot;,
+          &quot;rmarkdown&quot;, 
+          &quot;rmdformats&quot;,
+          &quot;sf&quot;,
+          &quot;spData&quot;,
+          &quot;spdep&quot;, 
+          &quot;stars&quot;,
+          &quot;terra&quot;, 
+          &quot;tidyverse&quot;, 
+          &quot;tmap&quot;,
+          &quot;xaringan&quot;, 
+          &quot;xaringanthemer&quot;)
+# Install des packages sur le CRAN
+# (les packages déjà présents ne seront pas réinstallés)
+remotes::install_cran(pkgs)
+
+
+# Les packages hors CRAN
+remotes::install_github(&quot;Nowosad/spDataLarge&quot;)
+remotes::install_github(&quot;Nowosad/supercells&quot;)
+remotes::install_github(&quot;geocompr/geocompkg&quot;)</code></pre>
+</div>
 
 
 

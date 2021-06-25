@@ -1,5 +1,9 @@
 ---
-title: "About This Website"
+title: ""
 ---
 
-More about this website.
+Cette école thématique est organisée par l’[UMS RIATE](https://tiate.cnrs.fr).  
+Son comité scientifique est composé de Claude Grasland (UMR Géographie-cités - Université de Paris), Renaud Le Goix (UMR Géographie-cités - Université de Paris) et Marion Le Texier (UMR IDEES - Université de Rouen Normandie).   
+Son responsable scientifique est Timothée Giraud (UMS RIATE - CNRS).  
+
+<img title="logo_CNRS_1.png" src="https://sigr2020.sciencesconf.org/data/pages/logo_CNRS_1.png" alt="logo_CNRS_1.png" width="75px" />   <img title="logo_CIST.jpeg" src="https://cist.cnrs.fr/wp-content/uploads/2021/03/cist-logo-bleu_sur_blanc-web.png" alt="logo_CIST.jpeg" width="75px" />  <img title="logo_RIATE.png" src="https://sigr2020.sciencesconf.org/data/pages/logo_RIATE.png" alt="logo_RIATE.png" height="100%"/>

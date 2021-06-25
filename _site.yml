@@ -1,9 +1,25 @@
 name: "my-website"
 navbar:
-  title: "SIGR 2021"
+  title: "SIGR2021"
+  type: inverse
   left:
-    - text: "Home"
+    - text: "Accueil"
       href: index.html
+    - text: "Programme"
+      icon: fa-calendar-alt
+      href: programme.html
+    - text: "Installation"
+      icon: fa-cog
+      href: installations.html
+    - text: "Présentations"
+      icon: fa-window-restore
+      href: presentations.html
+    - text: "Exposés"
+      icon: fa-user-friends
+      href: exposes.html
     - text: "About"
       href: about.html
+  right:
+    - icon: fa-github
+      href: https://github.com/sigr2021/site
 output_dir: "docs"

@@ -1,0 +1,52 @@
+---
+title: ""
+---
+
+## Installation des logiciels
+
+Comme vous le savez, nous utiliserons le logiciel R pour l'ensemble des ateliers. Nous aurons donc besoin d'une **version récente de R** (dans l'idéal la version 4.1.0 et au minimum une version >= à 4.0.0), du logiciel **RStudio** (au minimum une version >= à 1.4.0) et du logiciel **git**.
+
+-   [Installation de R](https://cran.r-project.org/)
+-   [Installation de RStudio](https://www.rstudio.com/products/rstudio/download/#download)
+-   [Installation de git](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Installation-de-Git)
+
+Il est vraiment préférable de télécharger les packages en amont de l'école. Vous trouverez ici un script qui permettra d'installer les package que nous utiliserons cette semaine. Notez que l'installation de ces packages va prendre un certain temps.
+
+
+```{r, eval = FALSE}
+# installer remotes, nous utiliserons remotes pour installer les autres packages
+install.packages("remotes")
+
+# les packages du CRAN
+pkgs <- c("devtools",
+          "dplyr", 
+          "fields",
+          "GGally", 
+          "gstat", 
+          "gtsummary", 
+          "GWmodel", 
+          "knitr", 
+          "mapsf", 
+          "plotly",
+          "raster",
+          "rmarkdown", 
+          "rmdformats",
+          "sf",
+          "spData",
+          "spdep", 
+          "stars",
+          "terra", 
+          "tidyverse", 
+          "tmap",
+          "xaringan", 
+          "xaringanthemer")
+# Install des packages sur le CRAN
+# (les packages déjà présents ne seront pas réinstallés)
+remotes::install_cran(pkgs)
+
+
+# Les packages hors CRAN
+remotes::install_github("Nowosad/spDataLarge")
+remotes::install_github("Nowosad/supercells")
+remotes::install_github("geocompr/geocompkg")
+```

@@ -1,0 +1,23 @@
+---
+title: ""
+---
+
+## Information sur les exposés
+
+
+Chaque fin de journée (16h30 - 18h) sera dédiée à un moment d'échange entre les participants autour de leurs travaux.  
+Vous êtes donc invités à préparer une **brève** présentation (5 minutes maximum). Elle sera suivie d'échanges avec les participants de l'école d'été (5 minutes).  
+Pour susciter des interactions fructueuses en lien avec les sujets de l'école thématique, vous pouvez aborder les éléments suivants dans votre présentation :
+
+-   Votre champ de recherche (thématique + méthodologie)
+-   Les outils que vous mobilisez pour manipuler de l'information spatiale.
+-   Problématiques de reproductibilité auxquels vous faites face.
+
+Vous pouvez prévoir 2 ou 3 slides si vous voulez, mais cela n'est pas obligatoire.
+
+Pour faciliter les échanges, et en nous appuyant sur les documents que vous nous avez communiqués avec vos candidatures, nous avons regroupé les exposés de la manière suivante.
+
+**Recherche reproductible (lundi)**  
+**SIG et cartographie (mardi)**    
+**Analyse spatiale (mercredi)**     
+**Image et télédétection (jeudi)**   

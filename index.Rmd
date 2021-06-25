@@ -1,22 +1,29 @@
 ---
 title: "École thématique Sciences de l'information géographique reproductibles"
 ---
-
-Ce site contient principalement les liens vers présentations proposées dans les ateliers et cours de l'école thématique SIGR en 2021. 
-
+*Saint-Pierre d’Oléron du 27/06/2021 au 02/07/2021*
 
 
-## Outils de la recherche reproductible
 
-[Introduction à Mardown pour R](https://sigr2021.github.io/markdown)    
-[Introduction à Xaringan](https://sigr2021.github.io/xaringan/#1)    
-[Introduction à git](https://sigr2021.github.io/git/)  
+## Enjeux et objectifs
 
+Les pratiques d’*open science* ont depuis plusieurs années gagné le domaine des sciences de l’information géographique. Les principaux programmes de recherche français et européens accordent une importance grandissante à l’ouverture, au partage des données et à la reproductibilité de la recherche. En géographie, le développement des méthodes d’analyses reproductibles a connu un fort essor qui se matérialise par le développement d’outils de traitements de l’information géographique et la pratique croissante d’outils de partage et de versionnement des protocoles d’analyse.  
 
-## SIG et cartographie
+L’école thématique vise à répondre aux problématiques de production, publication, diffusion ou valorisation de traitements de données géographiques dans une démarche de recherche reproductible.  
 
+**En identifiant les principales avancées conceptuelles, méthodologiques et techniques du domaine via un focus sur les méthodes de traitement de l’information géographique, cette école permettra aux participants de s'initier à la mise en œuvre de protocoles de recherche ouverts et transparents avec le logiciel libre R.**
 
-## Analyse spatiale
+ 
 
+### Modalités pédagogiques
 
-## Analyse d'image et télédétection
+L'école thématique s'articulera autour de cours magistraux, de séances de travail avec le logiciel R et de sessions de présentations (chaque participant.e fera un court exposé des enjeux de reproductibilité de l'analyse de l'information géographique auxquels il/elle fait face dans le cadre de ses recherches).
+
+ 
+
+ 
+
+### Financement
+
+<img title="logo_CNRS_1.png" src="https://sigr2020.sciencesconf.org/data/pages/logo_CNRS_1.png" alt="logo du CNRS" width="75px" />   <img title="logo_CIST.jpeg" src="https://cist.cnrs.fr/wp-content/uploads/2021/03/cist-logo-bleu_sur_blanc-web.png" alt="logo du CIST.jpeg" width="75px" />  <img title="logo_RIATE.png" src="https://sigr2020.sciencesconf.org/data/pages/logo_RIATE.png" alt="logo du RIATE.png" height="100%"/>
+

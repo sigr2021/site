@@ -1,0 +1,64 @@
+---
+title: ""
+---
+
+## Outils de la recherche reproductible
+
+#### <i class="fas fa-window-restore"></i>   
+<i class="fas fa-user"></i> <a href="https://team.inria.fr/polaris/members/arnaud-legrand/">Arnaud Legrand (UMR LIG - CNRS)</a>
+</br></br>
+
+#### <i class="fas fa-wrench"></i> [Introduction à Mardown pour R](https://sigr2021.github.io/markdown)  
+<i class="fas fa-user"></i>  <a href="http://riate.cnrs.fr/?page_id=38">Ronan Ysebaert (UMS RIATE - Universit&eacute; de Paris)</a>
+</br></br>
+
+#### <i class="fas fa-wrench"></i> [Introduction à Xaringan](https://sigr2021.github.io/xaringan/#1)
+<i class="fas fa-user"></i> <a href="https://neocarto.hypotheses.org/">Nicolas Lambert (UMS RIATE - CNRS)</a>
+</br></br>
+
+#### <i class="fas fa-wrench"></i> [Introduction à git](https://sigr2021.github.io/git/)  
+<i class="fas fa-user"></i> <a href="https://rgeomatic.hypotheses.org/">Timoth&eacute;e Giraud (UMS RIATE - CNRS)</a>  
+<font color = "red">A lire avant l'atelier :   </font>  
+Bryan J. 2017. Excuse me, do you have a moment to talk about version control? *PeerJ Preprints* 5:e3159v2 https://doi.org/10.7287/peerj.preprints.3159v2
+
+## SIG et cartographie
+
+#### <i class="fas fa-window-restore"></i> [A lecture on the GIS and mapping ecosystem of R](https://github.com/nowosad/SIGR2021)  
+<i class="fas fa-user"></i> <a href="https://environment.leeds.ac.uk/transport/staff/953/dr-robin-lovelace">Robin Lovelace (Institute for Transport Studies - University of Leeds, Royaume-Uni)</a>  
+<i class="fas fa-user"></i> <a href="https://nowosad.github.io/">Jakub Nowosad (Institute of Geoecology and Geoinformation - Adam Mickiewicz University, Pologne)</a>  
+</br></br>
+
+#### <i class="fas fa-wrench"></i> [A workshop on GIS and mapping with R](https://github.com/nowosad/SIGR2021)  
+<i class="fas fa-user"></i> <a href="https://environment.leeds.ac.uk/transport/staff/953/dr-robin-lovelace">Robin Lovelace (Institute for Transport Studies - University of Leeds, Royaume-Uni)</a>    
+<i class="fas fa-user"></i> <a href="https://nowosad.github.io/">Jakub Nowosad (Institute of Geoecology and Geoinformation - Adam Mickiewicz University, Pologne)</a>  
+<font color = "red">A lire avant l'atelier :   </font>  
+Le premier chapitre de Lovelace, R., Nowosad, J., & Muenchow, J. (2019). *Geocomputation with R*. CRC Press. https://geocompr.robinlovelace.net/intro.html  
+
+## Analyse spatiale
+
+#### <i class="fas fa-window-restore"></i>   
+<i class="fas fa-user"></i> <a href="https://www.parisgeo.cnrs.fr/spip.php?article127&amp;lang=fr">Marianne Gu&eacute;rois (UMR G&eacute;ographie-cit&eacute;s - Universit&eacute; de Paris)</a>  
+<font color = "red">A lire avant le cours :   </font>  
+Kedron P., Frazier A., Trgovac A., Nelson T., Fotheringham S., 2019, "Reproducibility and Replicability in Geographical Analysis", *Geographical Analysis*, Volume 53, Issue 1. https://doi.org/10.1111/gean.12221
+</br></br>
+
+#### <i class="fas fa-wrench"></i>     
+<i class="fas fa-user"></i> <a href="https://www.ladyss.com/feuillet-thierry?lang=fr">Thierry Feuillet (UMR LADYSS - Universit&eacute; Paris 8 Vincennes - Saind-Denis)</a>  
+<font color = "red">A lire avant l'atelier :   </font>    
+Helbich, M., Brunauer, W., Hagenauer, J., & Leitner, M. (2013). Data-driven regionalization of housing markets. *Annals of the Association of American Geographers*, 103(4), 871-889. https://www.geog.uni-heidelberg.de/md/chemgeo/geog/lehrstuehle/gis/helbich_etal_2012.pdf
+
+
+
+## Analyse d'image et télédétection
+
+
+
+#### <i class="fas fa-window-restore"></i>   
+<i class="fas fa-user"></i> <a href="http://www.prodig.cnrs.fr/spip.php?article1589">Malika Madelin (UMR PRODIG - Universit&eacute; de Paris)</a>
+</br></br>
+
+#### <i class="fas fa-wrench"></i> [Image processing and all things raster](https://github.com/nowosad/SIGR2021)  
+<i class="fas fa-user"></i> <a href="https://nowosad.github.io/">Jakub Nowosad (Institute of Geoecology and Geoinformation - Adam Mickiewicz University, Pologne)</a>  
+<i class="fas fa-user"></i> <a href="https://environment.leeds.ac.uk/transport/staff/953/dr-robin-lovelace">Robin Lovelace (Institute for Transport Studies - University of Leeds, Royaume-Uni)</a>
+
+
