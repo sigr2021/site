@@ -18,6 +18,7 @@ navbar:
       icon: fa-user-friends
       href: exposes.html
     - text: "Pad"
+      icon: fa-file-alt
       href: pad.html
     - text: "À propos"
       href: about.html
