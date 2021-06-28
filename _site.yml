@@ -17,6 +17,8 @@ navbar:
     - text: "Exposés"
       icon: fa-user-friends
       href: exposes.html
+    - text: "Pad"
+      href: pad.html
     - text: "À propos"
       href: about.html
   right:

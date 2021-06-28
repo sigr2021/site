@@ -1,0 +1,4 @@
+<font color="red">Vous pouvez éditer le pad de l'école thématique ici : [tinyurl.com/sigr2021](https://tinyurl.com/sigr2021)</font>
+ 
+
+<iframe src="https://hackmd.io/@0dZtQ48qQmu2WF-M6i49ew/ryEIk-whu" frameborder = 0 width="910" height=520> </iframe>
