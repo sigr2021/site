@@ -6,7 +6,7 @@ title: "Les présentations et ateliers"
 
 ## Outils de la recherche reproductible
 
-### <i class="fas fa-window-restore"></i>   
+### <i class="fas fa-window-restore"></i> [Reproducibility Crisis and Open Science](https://raw.githubusercontent.com/alegrand/SMPE/master/lectures/talk_21_06_28_Oleron.pdf)    
 <i class="fas fa-user"></i> <a href="https://team.inria.fr/polaris/members/arnaud-legrand/">Arnaud Legrand (UMR LIG - CNRS)</a>
 </br></br>
 

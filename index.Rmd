@@ -20,7 +20,8 @@ L’école thématique vise à répondre aux problématiques de production, publ
 L'école thématique s'articulera autour de cours magistraux, de séances de travail avec le logiciel R et de sessions de présentations (chaque participant.e fera un court exposé des enjeux de reproductibilité de l'analyse de l'information géographique auxquels il/elle fait face dans le cadre de ses recherches).
 
  
-
+### Pad
+<font color="red">Vous pouvez éditer le pad de l'école thématique ici : [tinyurl.com/sigr2021](https://tinyurl.com/sigr2021)</font>
  
 
 ### Financement
