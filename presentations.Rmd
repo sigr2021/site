@@ -23,9 +23,9 @@ title: "Les présentations et ateliers"
 <font color = "red">A lire avant l'atelier :   </font>  
 Bryan J. 2017. Excuse me, do you have a moment to talk about version control? *PeerJ Preprints* 5:e3159v2 https://doi.org/10.7287/peerj.preprints.3159v2
 
-## SIG et cartographie 
+## SIG et cartographie {.active}
 
-### <i class="fas fa-window-restore"></i> [A lecture on the GIS and mapping ecosystem of R](https://github.com/nowosad/SIGR2021)  
+### <i class="fas fa-window-restore"></i> [GIS and mapping - A lecture on the GIS and mapping ecosystem of R](https://nowosad.github.io/SIGR2021/lecture/lecture.html)  
 <i class="fas fa-user"></i> <a href="https://environment.leeds.ac.uk/transport/staff/953/dr-robin-lovelace">Robin Lovelace (Institute for Transport Studies - University of Leeds, Royaume-Uni)</a>  
 <i class="fas fa-user"></i> <a href="https://nowosad.github.io/">Jakub Nowosad (Institute of Geoecology and Geoinformation - Adam Mickiewicz University, Pologne)</a>
 </br></br>
