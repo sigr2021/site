@@ -2,7 +2,7 @@
 title: "Pad"
 ---
 
-<font color="red">Vous pouvez éditer le pad de l'école thématique ici : [tinyurl.com/sigr2021](https://tinyurl.com/sigr2021)</font>
+<font color="red">Vous pouvez éditer le pad de l'école thématique ici : [https://hackmd.io/@sigr2021/ryEIk-whu](https://hackmd.io/@sigr2021/ryEIk-whu)</font>
  
 
-<iframe src="https://hackmd.io/@0dZtQ48qQmu2WF-M6i49ew/ryEIk-whu" frameborder = 0 width="910" height=520> </iframe>
+<iframe src="https://hackmd.io/@sigr2021/ryEIk-whu" frameborder = 0 width="910" height=520> </iframe>
