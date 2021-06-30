@@ -30,11 +30,16 @@ Bryan J. 2017. Excuse me, do you have a moment to talk about version control? *P
 <i class="fas fa-user"></i> <a href="https://nowosad.github.io/">Jakub Nowosad (Institute of Geoecology and Geoinformation - Adam Mickiewicz University, Pologne)</a>
 </br></br>
 
-### <i class="fas fa-wrench"></i> [A workshop on GIS and mapping with R](https://github.com/nowosad/SIGR2021)  
+### <i class="fas fa-wrench"></i> [A workshop on GIS and mapping with R - part 1](https://nowosad.github.io/SIGR2021/workshop1/workshop1_rl.html)  
+### <i class="fas fa-wrench"></i> [A workshop on GIS and mapping with R - part 2](https://nowosad.github.io/SIGR2021/workshop1/workshop1_jn.html)  
 <i class="fas fa-user"></i> <a href="https://environment.leeds.ac.uk/transport/staff/953/dr-robin-lovelace">Robin Lovelace (Institute for Transport Studies - University of Leeds, Royaume-Uni)</a>    
 <i class="fas fa-user"></i> <a href="https://nowosad.github.io/">Jakub Nowosad (Institute of Geoecology and Geoinformation - Adam Mickiewicz University, Pologne)</a>  
 <font color = "red">A lire avant l'atelier :   </font>  
 Le premier chapitre de Lovelace, R., Nowosad, J., & Muenchow, J. (2019). *Geocomputation with R*. CRC Press. https://geocompr.robinlovelace.net/intro.html  
+
+
+
+
 
 ## Analyse spatiale
 
