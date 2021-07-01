@@ -38,7 +38,8 @@ pkgs <- c("devtools",
           "tidyverse", 
           "tmap",
           "xaringan", 
-          "xaringanthemer")
+          "xaringanthemer",
+          "reshape2")
 # Install des packages sur le CRAN
 # (les packages déjà présents ne seront pas réinstallés)
 remotes::install_cran(pkgs)
