@@ -23,7 +23,7 @@ title: "Les présentations et ateliers"
 <font color = "red">A lire avant l'atelier :   </font>  
 Bryan J. 2017. Excuse me, do you have a moment to talk about version control? *PeerJ Preprints* 5:e3159v2 https://doi.org/10.7287/peerj.preprints.3159v2
 
-## SIG et cartographie {.active}
+## SIG et cartographie
 
 ### <i class="fas fa-window-restore"></i> [GIS and mapping - A lecture on the GIS and mapping ecosystem of R](https://nowosad.github.io/SIGR2021/lecture/lecture.html)  
 <i class="fas fa-user"></i> <a href="https://environment.leeds.ac.uk/transport/staff/953/dr-robin-lovelace">Robin Lovelace (Institute for Transport Studies - University of Leeds, Royaume-Uni)</a>  
@@ -41,15 +41,15 @@ Le premier chapitre de Lovelace, R., Nowosad, J., & Muenchow, J. (2019). *Geocom
 
 
 
-## Analyse spatiale
+## Analyse spatiale  {.active}
 
-### <i class="fas fa-window-restore"></i>   
+### <i class="fas fa-window-restore"></i>
 <i class="fas fa-user"></i> <a href="https://www.parisgeo.cnrs.fr/spip.php?article127&amp;lang=fr">Marianne Gu&eacute;rois (UMR G&eacute;ographie-cit&eacute;s - Universit&eacute; de Paris)</a>  
 <font color = "red">A lire avant le cours :   </font>  
 Kedron P., Frazier A., Trgovac A., Nelson T., Fotheringham S., 2019, "Reproducibility and Replicability in Geographical Analysis", *Geographical Analysis*, Volume 53, Issue 1. https://doi.org/10.1111/gean.12221
 </br></br>
 
-### <i class="fas fa-wrench"></i>     
+### <i class="fas fa-wrench"></i>  [Atelier analyse spatiale (GWR)](https://sigr2021.github.io/gwr/)      
 <i class="fas fa-user"></i> <a href="https://www.ladyss.com/feuillet-thierry?lang=fr">Thierry Feuillet (UMR LADYSS - Universit&eacute; Paris 8 Vincennes - Saind-Denis)</a>  
 <font color = "red">A lire avant l'atelier :   </font>    
 Helbich, M., Brunauer, W., Hagenauer, J., & Leitner, M. (2013). Data-driven regionalization of housing markets. *Annals of the Association of American Geographers*, 103(4), 871-889. https://www.geog.uni-heidelberg.de/md/chemgeo/geog/lehrstuehle/gis/helbich_etal_2012.pdf
