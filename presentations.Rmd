@@ -41,7 +41,7 @@ Le premier chapitre de Lovelace, R., Nowosad, J., & Muenchow, J. (2019). *Geocom
 
 
 
-## Analyse spatiale  {.active}
+## Analyse spatiale 
 
 ### <i class="fas fa-window-restore"></i>
 <i class="fas fa-user"></i> <a href="https://www.parisgeo.cnrs.fr/spip.php?article127&amp;lang=fr">Marianne Gu&eacute;rois (UMR G&eacute;ographie-cit&eacute;s - Universit&eacute; de Paris)</a>  
@@ -56,13 +56,13 @@ Helbich, M., Brunauer, W., Hagenauer, J., & Leitner, M. (2013). Data-driven regi
 
 
 
-## Analyse d'image et télédétection
+## Analyse d'image et télédétection  {.active}
 
 ### <i class="fas fa-window-restore"></i>   
 <i class="fas fa-user"></i> <a href="http://www.prodig.cnrs.fr/spip.php?article1589">Malika Madelin (UMR PRODIG - Universit&eacute; de Paris)</a>
 </br></br>
 
-### <i class="fas fa-wrench"></i> [Image processing and all things raster](https://github.com/nowosad/SIGR2021)  
+### <i class="fas fa-wrench"></i> [Image processing and all things raster](https://nowosad.github.io/SIGR2021/workshop2/workshop2.html)  
 <i class="fas fa-user"></i> <a href="https://nowosad.github.io/">Jakub Nowosad (Institute of Geoecology and Geoinformation - Adam Mickiewicz University, Pologne)</a>  
 <i class="fas fa-user"></i> <a href="https://environment.leeds.ac.uk/transport/staff/953/dr-robin-lovelace">Robin Lovelace (Institute for Transport Studies - University of Leeds, Royaume-Uni)</a>
 
