@@ -1,8 +1,0 @@
----
-title: "Pad"
----
-
-<font color="red">Vous pouvez éditer le pad de l'école thématique ici : [https://hackmd.io/@sigr2021/ryEIk-whu](https://hackmd.io/@sigr2021/ryEIk-whu)</font>
- 
-
-<iframe src="https://hackmd.io/@sigr2021/ryEIk-whu" frameborder = 0 width="910" height=520> </iframe>
