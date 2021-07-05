@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        École thématique Sciences de l’information géographique reproductibles - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important;position:relative}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit;overflow:visible}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.figma{display:table;position:relative;width:100%;padding-bottom:56.25%}.figma iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%;border:1px solid #eee}.MJX_Assistive_MathML{display:none}#MathJax_Message{z-index:1000!important}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc.both-mode{margin-left:8px}.ui-toc.both-mode .ui-toc-label{height:40px;padding:10px 4px;border-top-left-radius:0;border-bottom-left-radius:0}.ui-toc-label{background-color:#e6e6e6;border:none;color:#868686;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:20px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child>ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:50%;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-more-info{color:#888;cursor:pointer;vertical-align:middle}.ui-more-info .fa{font-size:16px}.ui-connectedGithub,.ui-published-note{color:#888}.ui-connectedGithub{line-height:23px;white-space:nowrap}.ui-connectedGithub a.file-path{color:#888;text-decoration:none;padding-left:22px}.ui-connectedGithub a.file-path:active,.ui-connectedGithub a.file-path:hover{color:#888;text-decoration:underline}.ui-connectedGithub .fa{font-size:20px}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}.selectable{-webkit-user-select:text;-o-user-select:text;user-select:text}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}.site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .site-ui-font{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;letter-spacing:.025em;font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="false"><h1 id="École-thématique-Sciences-de-l’information-géographique-reproductibles" data-id="École-thématique-Sciences-de-l’information-géographique-reproductibles"><a class="anchor hidden-xs" href="#École-thématique-Sciences-de-l’information-géographique-reproductibles" title="École-thématique-Sciences-de-l’information-géographique-reproductibles"><span class="octicon octicon-link"></span></a><span>École thématique Sciences de l’information géographique reproductibles</span></h1><p><span>Lien vers le hackmd: </span><a href="https://hackmd.io/@sigr2021/ryEIk-whu" target="_blank" rel="noopener"><span>https://hackmd.io/@sigr2021/ryEIk-whu</span></a></p><h1 id="Vos-remarques-et-suggestions" data-id="Vos-remarques-et-suggestions"><a class="anchor hidden-xs" href="#Vos-remarques-et-suggestions" title="Vos-remarques-et-suggestions"><span class="octicon octicon-link"></span></a><span>Vos remarques et suggestions</span></h1><p><span>Nous aimerions recueillir vos remarques et suggestions sur cette école thématique. Qu’elles portent sur l’organisation (hébergement, repas…), la forme (par ex. “ateliers le matin cours le soir, il faudrait faire l’inverse…”) ou le fond (“c’est dommage de n’avoir pas évoqué les questions de stockage des données”) vous pouvez les écrire ici :</span></p><ul>
+<li>
+<p><span>Peut-être aurait-il fallu laisser une demi journée libre pour profiter un peu du site pendant la journée. </span><img class="emoji" alt=":-1:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/-1.png"></p>
+</li>
+<li>
+<p><span>Beau panorama des méthodes, outils et chouettes discussions et échanges, très belles interventions + un max. de ressources très pédagogiques mises à disposition. Emploi du temps OK. Temps de mise en pratique parfois un peu juste.</span></p>
+</li>
+<li>
+<p><span>Pour une prochaine édition (celle-ci est déjà géniale !), peut-être que mettre les participant·e·s sur un travail commun un peu conséquent pourrait permettre de renforcer la pratique d’une façon plus profitable que des séries d’exercices (géniaux aussi ;-) déconnectés entre eux ? Voire, est-ce qu’un tel projet collectif ne pourrait pas permettre de résoudre de vraies problématiques qui se posent dans les labos (mise en place d’un portail de données, par ex ?) ?</span></p>
+</li>
+<li>
+<p><span>(Sylvestre) Cours et ateliers très rapides (mais toujours en écoles thématiques), mais le volume de contenu était bien et adapté à la semaine ! </span><img class="emoji" alt=":+1:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/+1.png"></p>
+</li>
+<li>
+<p><span>(Sylvestre) Idée qu’il serait pas mal d’avoir des projets de groupe avec présentations collectives à la fin de la semaine : par ex mettre à dispo sur github et pour tout le monde un traitement de données spatiales (vecteur ou raster) sur r, par ex sur Oléron.</span></p>
+</li>
+<li>
+<p><span>(Sylvestre) super intéressant d’avoir les présentations de tout le monde en fin de journée.</span></p>
+</li>
+<li>
+<p><span>(Sylvestre) idée que ce genre de semaine est indispensable à beaucoup de gens environ tous les deux-trois ans… pour continuer à suivre des outils/enviro/techniques et des méthodes qui évoluent vite. </span><img class="emoji" alt=":+1:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/+1.png"></p>
+</li>
+<li>
+<p><span>Tous les ateliers sont parfaits. Le temps donné est idéal. Le seul bémol est le cours de l’analyse spatial qu’il faudrait peut-être plus lier au  TD du lendemain.</span></p>
+</li>
+<li>
+<p><span>c’était super ! Un grand bravo aux organisateurs et intervenants. Je repars avec plein d’idées et d’outils que j’espère mettre en pratique bientôt. L’équilibre ateliers/conférences était parfait pour moi. En plus il y avait un off avec sessions du soir, merci aux intervenants pour leur disponibilité.</span></p>
+</li>
+<li>
+<p><span>Semaine très enrichissante. Programme adapté pour tous les niveaux. Visio en anglais à éviter car TP + visio + langue anglaise = TP trop compliqué à ingérer et digérer.</span></p>
+</li>
+<li>
+<p><span>Un super moment, réellement adaptée à toutes les pratiques de R, mêmes en partant de 0. Bienveillance et entraide tout du long. Super idée que de mixer les niveaux autour des tables pour une meilleure autogestion.</span></p>
+</li>
+<li>
+<p><span>Cette école thématique a répondu à mes attentes : intervenants pédagogues, présentations claires, adaptées à tous, exemples pertinents. J’espère que les liens aux présentations resteront actifs longtemps. Merci beaucoup pour cette trés enrichissante semaine.</span></p>
+</li>
+<li>
+<p><span>Suggestions d’intervenants pour #SIGR2022</span></p>
+<ul>
+<li><span>#rspatial</span>
+<ul>
+<li><span>Edzer Pebesma</span></li>
+<li><span>Roger Bivand</span></li>
+</ul>
+</li>
+<li><span>création de package R : Sébastien Rochette</span></li>
+<li><span>Production documents Rmarkdown</span>
+<ul>
+<li><span>Yihui Xie</span></li>
+<li><span>Christophe Dervieux</span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><blockquote>
+<p><span>tout simplement </span><img class="emoji" alt=":smile:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/smile.png"><span> </span><img class="emoji" alt=":arrow_heading_up:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/arrow_heading_up.png"><span> (@rgeomatic)</span></p>
+</blockquote><ul>
+<li>
+<p><span>Le bar ferme trop tôt + trop de moustiques</span></p>
+</li>
+<li>
+<p><img class="emoji" alt=":cupid:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/cupid.png"><span> rgeomatic </span><img class="emoji" alt=":world_map:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/world_map.png"></p>
+</li>
+<li>
+<p><span>superbe semaine, merci aux organisateurs et intervenants pour l’énorme travail de conception et de réalisation. J’ai apprécié l’alternance de théorie et de mise en pratique. Rien a suggérer, vous avez mis la barre très haut ! Peut-être prévoir des temps de pratique commune suplémentaires ? sur la base du volontariat ? lors des temps off ? A condition que le bar ferme plus tard !! </span><img class="emoji" alt=":smile:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/smile.png"></p>
+</li>
+</ul><p><span>Un grand merci Timothée, plus généralement aux colègues de Riate.</span></p><ul>
+<li><span>(Arnaud) </span><img class="emoji" alt=":pray:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/pray.png"><span> Un grand merci à tous et à toutes pour cette super semaine que j’ai passée avec vous. J’ai appris plein de choses, des discussions super intéressantes sur des problèmes complexes aux enjeux majeurs. Je saurai où aller en cas de reconversion thématique! </span><img class="emoji" alt=":smiley:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/smiley.png"><span> Et grand bravo aux organisateurs de RIATE!</span></li>
+</ul><hr><p><span>Site web de l’école: </span><a href="https://sigr2021.github.io/site/" target="_blank" rel="noopener"><span>https://sigr2021.github.io/site/</span></a>
+<span>Lien vers le hackmd: </span><s><a href="https://tinyurl.com/sigr2021" target="_blank" rel="noopener"><span>https://tinyurl.com/sigr2021</span></a></s><span>  </span><a href="https://hackmd.io/@sigr2021/ryEIk-whu" target="_blank" rel="noopener"><span>https://hackmd.io/@sigr2021/ryEIk-whu</span></a></p><p><a href="https://bakaniko.github.io/notesSIGR2021/" target="_blank" rel="noopener"><span>Notes au format packagedown</span></a></p><p><span class="toc"><ul>
+<li><a href="#École-thématique-Sciences-de-l’information-géographique-reproductibles" title="École thématique Sciences de l’information géographique reproductibles">École thématique Sciences de l’information géographique reproductibles</a></li>
+<li><a href="#Vos-remarques-et-suggestions" title="Vos remarques et suggestions">Vos remarques et suggestions</a></li>
+<li><a href="#Aide-pour-les-installations" title="Aide pour les installations">Aide pour les installations</a></li>
+<li><a href="#Lundi-28-Juin" title="Lundi 28 Juin">Lundi 28 Juin</a><ul>
+<li><a href="#Présentation-générale" title="Présentation générale">Présentation générale</a></li>
+<li><a href="#Séminaire-Recherche-Reproductible" title="Séminaire Recherche Reproductible">Séminaire Recherche Reproductible</a><ul>
+<li><a href="#Quelques-ressources-slides-MOOC-git-avec-des-petits-dessins-etc" title="Quelques ressources (slides, MOOC, git avec des petits dessins, etc.)">Quelques ressources (slides, MOOC, git avec des petits dessins, etc.)</a></li>
+<li><a href="#Reproducibility-Crisis-and-Open-Science-Arnaud-Legrand" title="Reproducibility Crisis and Open Science (Arnaud Legrand)">Reproducibility Crisis and Open Science (Arnaud Legrand)</a></li>
+<li><a href="#“Aspect-Humains”" title="“Aspect Humains”">“Aspect Humains”</a></li>
+</ul>
+</li>
+<li><a href="#R-Markdown" title="R Markdown">R Markdown</a><ul>
+<li><a href="#Présentation" title="Présentation">Présentation</a></li>
+<li><a href="#Faire-son-Rmarkdown" title="Faire son Rmarkdown">Faire son Rmarkdown</a></li>
+<li><a href="#Syntaxe-markdown" title="Syntaxe markdown">Syntaxe markdown</a></li>
+<li><a href="#Bonnes-pratiques-de-codes" title="Bonnes pratiques de codes">Bonnes pratiques de codes</a></li>
+<li><a href="#Fonctionnement-du-R-Markdown" title="Fonctionnement du R Markdown">Fonctionnement du R Markdown</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Mardi-29-juin" title="Mardi 29 juin">Mardi 29 juin</a><ul>
+<li><a href="#Présenter-vos-travaux-en-Markdown" title="Présenter vos travaux en Markdown">Présenter vos travaux en Markdown</a><ul>
+<li><a href="#en-tête" title="en tête">en tête</a></li>
+<li><a href="#contenu" title="contenu">contenu</a></li>
+</ul>
+</li>
+<li><a href="#intro-à-Git" title="intro à Git">intro à Git</a><ul>
+<li><a href="#Ressources" title="Ressources">Ressources</a></li>
+<li><a href="#Trivia" title="Trivia:">Trivia:</a></li>
+</ul>
+</li>
+<li><a href="#SIG-et-Cartography" title="SIG et Cartography">SIG et Cartography</a><ul>
+<li><a href="#créer-une-reprex--exemple-reproductif" title="créer une reprex : exemple reproductif">créer une reprex : exemple reproductif</a></li>
+<li><a href="#GIS-ecosystem-of-R" title="GIS ecosystem of R">GIS ecosystem of R</a></li>
+<li><a href="#R-package" title="R package">R package</a></li>
+<li><a href="#R-spatial-infrastructure" title="R spatial infrastructure">R spatial infrastructure</a></li>
+<li><a href="#pont-vers-d’autres-logiciels" title="pont vers d’autres  logiciels">pont vers d’autres  logiciels</a></li>
+<li><a href="#Mapping-ecosytem" title="Mapping ecosytem">Mapping ecosytem</a></li>
+<li><a href="#CRS" title="CRS">CRS</a></li>
+<li><a href="#Geocomputation" title="Geocomputation">Geocomputation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Mercredi-30" title="Mercredi 30">Mercredi 30</a><ul>
+<li><a href="#Comment-importer-des-données" title="Comment importer des données">Comment importer des données</a></li>
+<li><a href="#getting-started-with-tmap-package" title="getting started with tmap package">getting started with tmap package</a></li>
+<li><a href="#Sciences-reproductibles-et-analyse-spatiale---M-Guérois" title="Sciences reproductibles et analyse spatiale - M. Guérois">Sciences reproductibles et analyse spatiale - M. Guérois</a></li>
+</ul>
+</li>
+<li><a href="#Questions-et-ressources-générales-sur-l’utilisation-de-R" title="Questions et ressources générales sur l’utilisation de R">Questions et ressources générales sur l’utilisation de R</a><ul>
+<li><a href="#Demander-de-l’aide-ou-du-support" title="Demander de l’aide ou du support">Demander de l’aide ou du support</a></li>
+<li><a href="#Journal" title="Journal">Journal</a></li>
+<li><a href="#Utiliser-des-programmes-et-pkgs-R-anciens" title="Utiliser des programmes et pkgs R anciens">Utiliser des programmes et pkgs R anciens</a></li>
+<li><a href="#Le-pipe-R--gt" title="Le pipe R : %>%">Le pipe R : %&gt;%</a></li>
+<li><a href="#Retrouver-le-dépôt-Github-associé-à-un-html" title="Retrouver le dépôt Github associé à un html">Retrouver le dépôt Github associé à un html</a></li>
+<li><a href="#Projet-Rzine" title="Projet Rzine">Projet Rzine</a><ul>
+<li><a href="#Ressources1" title="Ressources">Ressources</a></li>
+<li><a href="#Publications---Fiche-Rzine" title="Publications - Fiche Rzine">Publications - Fiche Rzine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Jeudi-1-juillet" title="Jeudi 1 juillet">Jeudi 1 juillet</a><ul>
+<li><a href="#Thierry-Feuillet--Atelier-analyse-spatiale-GWR" title="Thierry Feuillet : Atelier analyse spatiale (GWR)">Thierry Feuillet : Atelier analyse spatiale (GWR)</a><ul>
+<li><a href="#Etape-1-Modélisation" title="Etape 1. Modélisation">Etape 1. Modélisation</a></li>
+<li><a href="#Etape-2-analyse-des-résidus" title="Etape 2. analyse des résidus">Etape 2. analyse des résidus</a></li>
+<li><a href="#Etape-3-Modèle-GWR" title="Etape 3. Modèle GWR">Etape 3. Modèle GWR</a></li>
+<li><a href="#Etape-3---Etape-de-cartographie" title="Etape 3 - Etape de cartographie">Etape 3 - Etape de cartographie</a></li>
+<li><a href="#Etape-4-Régionalisation" title="Etape 4. Régionalisation">Etape 4. Régionalisation</a></li>
+</ul>
+</li>
+<li><a href="#Malika-Madelin--Analyse-d’images-Raster-et-télédetection" title="Malika Madelin : Analyse d’images Raster et télédetection">Malika Madelin : Analyse d’images Raster et télédetection</a><ul>
+<li><a href="#Sous-R-3-packages-“phares”" title="Sous R 3 packages “phares”">Sous R 3 packages “phares”</a></li>
+</ul>
+</li>
+<li><a href="#Timothée-G--mapsf" title="Timothée G. : mapsf">Timothée G. : mapsf</a><ul>
+<li><a href="#Contexte-de-développement" title="Contexte de développement">Contexte de développement</a></li>
+<li><a href="#Nouvelles-fonctionnalités-par-rapport-à-cartography" title="Nouvelles fonctionnalités** par rapport à {cartography}">Nouvelles fonctionnalités** par rapport à {cartography}</a></li>
+<li><a href="#Associés-au-package-" title="Associés au  package** :">Associés au  package** :</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Vendredi-2-juillet" title="Vendredi 2 juillet">Vendredi 2 juillet</a></li>
+</ul>
+</span></p><h1 id="Aide-pour-les-installations" data-id="Aide-pour-les-installations"><a class="anchor hidden-xs" href="#Aide-pour-les-installations" title="Aide-pour-les-installations"><span class="octicon octicon-link"></span></a><span>Aide pour les installations</span></h1><p><code>Rtools</code><span> installe pour windows les compilateurs et tout ce qu’il faut pour pouvoir developper et installer du code (pas forcément en R). </span><code>devtools</code><span>  et </span><code>remotes</code><span> fournissent ce qu’il faut pour développer des package R “proprement” (notamment installer des packages qui ne sont pas sur le CRAN).</span></p><h1 id="Lundi-28-Juin" data-id="Lundi-28-Juin"><a class="anchor hidden-xs" href="#Lundi-28-Juin" title="Lundi-28-Juin"><span class="octicon octicon-link"></span></a><span>Lundi 28 Juin</span></h1><h2 id="Présentation-générale" data-id="Présentation-générale"><a class="anchor hidden-xs" href="#Présentation-générale" title="Présentation-générale"><span class="octicon octicon-link"></span></a><span>Présentation générale</span></h2><p><span>Constitution des groupes en fonction des compétences</span></p><h2 id="Séminaire-Recherche-Reproductible" data-id="Séminaire-Recherche-Reproductible"><a class="anchor hidden-xs" href="#Séminaire-Recherche-Reproductible" title="Séminaire-Recherche-Reproductible"><span class="octicon octicon-link"></span></a><span>Séminaire Recherche Reproductible</span></h2><h3 id="Quelques-ressources-slides-MOOC-git-avec-des-petits-dessins-etc" data-id="Quelques-ressources-slides-MOOC-git-avec-des-petits-dessins-etc"><a class="anchor hidden-xs" href="#Quelques-ressources-slides-MOOC-git-avec-des-petits-dessins-etc" title="Quelques-ressources-slides-MOOC-git-avec-des-petits-dessins-etc"><span class="octicon octicon-link"></span></a><span>Quelques ressources (slides, MOOC, git avec des petits dessins, etc.)</span></h3><ul>
+<li>
+<p><span>Les </span><a href="https://github.com/alegrand/SMPE/raw/master/lectures/talk_21_06_28_Oleron.pdf" target="_blank" rel="noopener"><span>slides</span></a></p>
+</li>
+<li>
+<p><a href="https://www.fun-mooc.fr/fr/cours/recherche-reproductible-principes-methodologiques-pour-une-science-transparente/" target="_blank" rel="noopener"><span>Le MOOC </span><em><span>Recherche Reproductible: Principes méthodologiques pour une science transparente</span></em></a><span>. À consommer sans modération pour former étudiants de master et doctorants, à faire valider par les écoles doctorales! Le MOOC est en accès libre et les ressources réalisées pour le MOOC sont principalement en accès libre sur un </span><a href="https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/" target="_blank" rel="noopener"><span>gitlab</span></a><span>. Par exemple:</span></p>
+<ul>
+<li><a href="https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/-/blob/master/module4/ressources/resources_environment_fr.org" target="_blank" rel="noopener"><span>Obtenir des informations sur votre environnement et les packages R</span></a><span> à défaut d’avoir pu mettre en place un conteneur</span></li>
+<li><a href="https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/-/blob/master/module2/ressources/gitlab_fr.org" target="_blank" rel="noopener"><span>Installer git sous windows/Mac/…</span></a><span> et </span><a href="https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/-/blob/master/module2/ressources/rstudio-git_fr.org" target="_blank" rel="noopener"><span>faire du Git avec Rstudio</span></a></li>
+<li><span>Git avec des petits dessins (</span><a href="https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/-/raw/master/module1/slides/diapos_git.pdf?inline=false" target="_blank" rel="noopener"><span>slides</span></a><span>) et en vidéo sur youtube:</span>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=iub0_uVWGmg" target="_blank" rel="noopener"><span>Épisode 1</span></a><span> Notion d’historique</span></li>
+<li><a href="https://www.youtube.com/watch?v=4xsd8jHyVpk" target="_blank" rel="noopener"><span>Épisode 2</span></a><span> Travailler à plusieurs</span></li>
+<li><a href="https://www.youtube.com/watch?v=5EFyKBF1wWw" target="_blank" rel="noopener"><span>Épisode 3</span></a><span> L’écosystème Git (Github, Gitlab, kezako ?)</span></li>
+<li><a href="https://www.youtube.com/watch?v=ulu2MNV1OCc" target="_blank" rel="noopener"><span>Tuto Rstudio/Gitlab</span></a></li>
+<li><a href="https://www.youtube.com/watch?v=B31wrlWkjf0" target="_blank" rel="noopener"><span>Tuto Intro à Gitlab</span></a><span> et </span><a href="https://www.youtube.com/watch?v=uQ--X_4LDJc" target="_blank" rel="noopener"><span>Configurer Git/Gitlab</span></a></li>
+<li><a href="https://thinkr.fr/travailler-avec-git-via-rstudio-et-versionner-son-code/" target="_blank" rel="noopener"><span>https://thinkr.fr/travailler-avec-git-via-rstudio-et-versionner-son-code/</span></a><span> en Français et la “bible” </span><a href="https://happygitwithr.com/" target="_blank" rel="noopener"><span>https://happygitwithr.com/</span></a></li>
+<li><span>Quelques commandes magiques </span><img class="emoji" alt=":stuck_out_tongue_winking_eye:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/stuck_out_tongue_winking_eye.png"><pre><code>git blame          # Qui a fait quoi, quand, pourquoi
+git commit --amend # pour modifier légèrement son dernier commit (si vous n'avez pas fait push!!!)
+git revert         # pour "annuler" un commit en créant un "anti-commit"
+git stash          # mettre les modification courante de coté et les réintégrer plus tard avec git stash apply
+git hist           # voir l'arbre dans votre console (une fois qu'on a fait ce qui est décrit ici: https://gist.github.com/ecasilla/9669241 )
+git rebase -i      # [Danger] Retravailler son historique localement avant de faire un push. Attention à ne pas faire de bêtise!
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><span>Le livre </span><em><span>Vers une recherche reproductible: Faire évoluer ses pratiques</span></em><span> issu du booksprint: </span><a href="https://rr-france.github.io/bookrr/" target="_blank" rel="noopener"><span>version électronique</span></a><span> et la </span><a href="https://hal.archives-ouvertes.fr/hal-02144142v3" target="_blank" rel="noopener"><span>version retravaillée pour être au format livre</span></a></p>
+</li>
+<li>
+<p><span>Un </span><a href="https://github.com/cboettig/noise-phenomena" target="_blank" rel="noopener"><span>Article exécutable par Carl Boetinger</span></a><span> montré très rapidement par Robin et Jakub en page 16. Ça utilise binder et à permet de reproduire complètement son article avec son Rstudio mais directement dans son navigateur! </span><img class="emoji" alt=":smiley:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/smiley.png"><span> Click the </span><a href="http://beta.mybinder.org/v2/gh/cboettig/noise-phenomena/master?urlpath=rstudio" target="_blank" rel="noopener"><img src="http://mybinder.org/badge.svg" alt="Binder" loading="lazy"></a><span> button above to explore in an interactive RStudio session.</span></p>
+</li>
+<li>
+<p><a href="https://www.chiark.greenend.org.uk/~sgtatham/bugs.html" target="_blank" rel="noopener"><span>How to report bugs Effectively</span></a><span> </span><img src="https://media.giphy.com/media/fdLR6LGwAiVNhGQNvf/giphy.gif" alt="" loading="lazy"></p>
+<ul>
+<li><span>Reporting bugs in R: </span><a href="https://www.r-project.org/bugs.html" target="_blank" rel="noopener"><span>the official website</span></a><span> and the </span><a href="https://github.com/rstudio/rstudio/wiki/Writing-Good-Bug-Reports" target="_blank" rel="noopener"><span>Rstudio advices</span></a></li>
+<li><span>My advice: Use </span><a href="https://github.com/tidyverse/reprex" target="_blank" rel="noopener"><span>reprex</span></a><span> as explained by Robin in his talk </span><strong><span>and</span></strong><span> </span><code>devtools::session_info()</code><span> from </span><a href="https://github.com/r-lib/devtools" target="_blank" rel="noopener"><span>devtools</span></a></li>
+</ul>
+</li>
+</ul><p><span>Autres ressources qui n’ont rien à voir avec la recherche reproductible mais dont j’avais discuté avec certain(e)s à table:</span></p><ul>
+<li><span>Le groupe Eco Info </span><a href="https://ecoinfo.cnrs.fr/" target="_blank" rel="noopener"><span>https://ecoinfo.cnrs.fr/</span></a><span> qui s’intéresse à l’évaluation et à la réduction des impacts environnementaux et sociétaux négatifs des technologies du numérique.</span></li>
+<li><span>Sciences, Environnements et Sociétés : Rapport long du groupe de travail MakeSEnS d’Inria </span><a href="https://hal.inria.fr/hal-02340948" target="_blank" rel="noopener"><span>https://hal.inria.fr/hal-02340948</span></a></li>
+<li><span>Labo1.5 </span><a href="https://labos1point5.org/" target="_blank" rel="noopener"><span>https://labos1point5.org/</span></a></li>
+</ul><h3 id="Reproducibility-Crisis-and-Open-Science-Arnaud-Legrand" data-id="Reproducibility-Crisis-and-Open-Science-Arnaud-Legrand"><a class="anchor hidden-xs" href="#Reproducibility-Crisis-and-Open-Science-Arnaud-Legrand" title="Reproducibility-Crisis-and-Open-Science-Arnaud-Legrand"><span class="octicon octicon-link"></span></a><span>Reproducibility Crisis and Open Science (Arnaud Legrand)</span></h3><p><span>Ioannidis : statisticien, inflation de résultats faux, 2005</span></p><p><span>Crise de reproductibility : différent en fonction des disciplines</span></p><ul>
+<li><span>falsification / fraude (cas Dong-Pyou Han, Diederik Stapel, Brian Wansink, Reinhart and Rogoff)</span>
+<ul>
+<li><em><span>“si lui c’est faux que doit-on penser des autres”</span></em></li>
+<li><em><span>“coding errors, selective exclusion”</span></em><span> (2013 Herdon, Ash and Pollin)</span></li>
+<li><span>Publication en appuie aux politiques d’austerité</span></li>
+</ul>
+</li>
+</ul><p><span>La mauvaise science est déletere. Facilite un discours “anti-science”.</span></p><p><span>-&gt; crise de la crédibilité</span></p><p><span>Pourquoi est-ce que ces problèmes sont mis sur le devant la scéne ?</span></p><p><span>Fraude scientifique pas nouvelle.</span></p><p><span>Les pratiques évoluent. Pas simple de faire le tri entre ceux qui trichent, ceux qui “ameliorent/mise en forme”.</span></p><p><span>Crise de la reproductibilité : multi facteurs : fraudes, conflits d’interêt, incitations à reproduire et craintes pour se faire pirater (data et codes). En + de ces facteurs organisationnels, il y a aussi les facteurs + techniques : performance, data manquantes ou incompletes.</span></p><p><span>Cas en informatique de conf. centrée sur la reproductibilité des autres. Besoin d’un débat cordial dans la communauté scientifique.</span></p><p><span>Voire la reproductibilité comme une valeur coeur de la science et accessible à tous.</span>
+<span>contrôle de l’universalité et robustesse, permet un controle qualité.</span></p><p><span>Les pratiques scientifiques ont évolué avec l’informatiques.</span></p><p><span>-&gt; besoin d’ameliorer les pratiques logiciels</span></p><p><span>Il peut y avoir des problèmes au niveau des outils non adaptés, techniques non comprises, environnement logiciel.</span></p><p><span>Différentes réponses en fonction des disciplines:</span><br>
+<span>Il y a des techniques de “pre-registration” : on publi methode et hypothèse et quoi qu’il arrive au niveau des résultats l’etude sera publiée.</span></p><p><span>Pas inutile de raconter les impasses. Article iceberg de la recherche.</span>
+<span>Reproductibilité : Donner accès à un maximum d’infos pour reproduire les calculs, les analyses et les résultats publiés dans un article.</span></p><ul>
+<li><span>reproductioble expérimentale = même data, mêmes analyses, refaire le calcul de bout en bout</span></li>
+<li><span>reproductibilité statisitque : data différentes</span></li>
+<li><span>reproductibilité computationnelle :</span></li>
+</ul><p><span>Plusieurs outils:</span></p><ul>
+<li><span>Notebooks and workflows R studio, Jupyter</span></li>
+<li><span>Software environments (Docker)</span></li>
+<li><span>plateforme de partage (gitlab/ github)</span></li>
+</ul><p><span>Bonne pratique #1 : prendre des notes</span></p><h4 id="Tool-1--Journals-and-Litterate-Programming" data-id="Tool-1--Journals-and-Litterate-Programming"><a class="anchor hidden-xs" href="#Tool-1--Journals-and-Litterate-Programming" title="Tool-1--Journals-and-Litterate-Programming"><span class="octicon octicon-link"></span></a><span>Tool 1 : Journals and Litterate Programming</span></h4><p><span>Programmation lettrée: code lisible pour un humain  (Jupyter fonctionne comme du html; RStudio). Dans Jupyter, la trace des résultats est stockée (différemment de RStudio).</span></p><p><span>Contient : raisonnement, code et résultat de ce dernier</span></p><p><span>Avoir un cahier de laboratoire électronique equivalent :</span>
+<span>Emacs = 1 seul fichier, un éditeur de texte pensé comme un journal et qui sera diffusé ensuite.</span></p><p><span>Savoir si le doc va être partagé ou pas y compris ulterieurement.</span></p><p><span>Utilisation d’</span><a href="https://orgmode.org/" target="_blank" rel="noopener"><span>org mode</span></a><span>.</span></p><p><span>Deux fonctionnalités : Git et ecrire en même temps.</span></p><p><span>Journal: structure par date + mots clefs</span></p><p><span>Pas une panacée pour dev du code. Peu finir illisible.</span></p><p><span>Il y a utilisation de workflow pour décrire la liste des processus : structurer, décrire chaque brique et leur articulation. Exemples : Galaxy, Pegasus, snakemake (make en Python)…</span>
+<span>Avec R le package </span><code>targets</code><span> est une solution récente (successeur de </span><code>drake</code><span>, même auteur).</span></p><h4 id="Tool-2-Software-Environment-Control" data-id="Tool-2-Software-Environment-Control"><a class="anchor hidden-xs" href="#Tool-2-Software-Environment-Control" title="Tool-2-Software-Environment-Control"><span class="octicon octicon-link"></span></a><span>Tool 2: Software Environment Control</span></h4><p><span>En + de la version du code, la gestion des environnements logiciels et des dépendances des OS sont essentiels + impacts des compilers + des écosystèmes complexes (dépendance entre les packages).</span></p><p><span>Ecosysteme complexe:</span></p><p><span>Résultat différent entre la version de matplotlib donnée par la fonction et celle donnée par le gestionnaire de packets.</span></p><p><span>Il y a pas de standart sur les gestionnaires de packets (?).</span></p><p><span>Dans le notebook, utiliser </span><code>sessionInfo()</code>
+<span>et expliquer précisement les précautions d’usage</span>
+<span>Qq outils pour nous aider :</span></p><ul>
+<li><span>repro.zip , fichier créé automatiquement, pas limité</span></li>
+<li><span>docker, singularity : conteneur, plus léger qu’une machine virtuelle, il embarque une image comprenant le programme et ses dépendances. Il faut builder: </span><code>docker build -f &lt;mon dockerfile&gt;</code><span> Lancer : </span><code>docker run &lt;img&gt; &lt;cmd&gt;</code>
+<span>mais Docker a aussi ses limites, plutôt adapté pour de la diffusion (ex : derniere version d’un developpement), mais pas pour de la reproductibilité</span></li>
+<li><span>gestionnaire de paquets fonctionnels : écrire sous forme de fonctions. exemple : GUIX/NiX</span></li>
+</ul><h4 id="Tool-3-FAIR-principles-Git-archives-…" data-id="Tool-3-FAIR-principles-Git-archives-…"><a class="anchor hidden-xs" href="#Tool-3-FAIR-principles-Git-archives-…" title="Tool-3-FAIR-principles-Git-archives-…"><span class="octicon octicon-link"></span></a><span>Tool 3: FAIR principles, Git, archives, …</span></h4><p><span>Findable Accessible Interoperable Reusable</span></p><p><span>Principes generaux n’aidant pas toujours dans la vie de tout les jours.</span></p><h4 id="Git--version-control" data-id="Git--version-control"><a class="anchor hidden-xs" href="#Git--version-control" title="Git--version-control"><span class="octicon octicon-link"></span></a><span>Git = version control</span></h4><p><span>En local avec une facilité de retour en arrière</span></p><p><span>Distribué tout le monde a une copie de l’histoire.</span></p><p><span>Gérer son versionnement de son code</span>
+<span>avec GIT</span></p><h4 id="Forges-logiciels--GitHub-GitLab" data-id="Forges-logiciels--GitHub-GitLab"><a class="anchor hidden-xs" href="#Forges-logiciels--GitHub-GitLab" title="Forges-logiciels--GitHub-GitLab"><span class="octicon octicon-link"></span></a><span>Forges logiciels : GitHub, GitLab</span></h4><p><span>“verité des prix poussé à l’extrème”</span></p><ul>
+<li><span>Réseau social de dev.</span></li>
+<li><span>Interface web</span></li>
+<li><span>Gestion des utilisateurs</span></li>
+<li><span>Autres outils: Issues, CI/CD</span></li>
+</ul><ul>
+<li><span>Github pour le côté collaboratif, soit : avec</span>
+<ul>
+<li><span>Github : racheté par Microsoft</span></li>
+<li><span>Gitlab : code source ouvert</span></li>
+<li><span>Gitlab institutionnels</span></li>
+</ul>
+</li>
+</ul><p><span>des possibilités de migrer d’une forge à l’autre.</span>
+<span>Attention, ces forges ne sont pas des archives! La forge Inria Gforge est en cours de fermeture.</span></p><h4 id="Archives" data-id="Archives"><a class="anchor hidden-xs" href="#Archives" title="Archives"><span class="octicon octicon-link"></span></a><span>Archives</span></h4><p><span>Git n’est pas une archive.</span></p><p><span>Article archives </span><a href="http://arXiv.org" target="_blank" rel="noopener"><span>arXiv.org</span></a><span> / HAL : travail de curation</span></p><p><span>Data archives: figshare / zenodo : pas de curation</span></p><p><span>Software Archive: </span><a href="https://www.softwareheritage.org/" target="_blank" rel="noopener"><span>Software Heritage</span></a></p><p><span>Archives</span></p><ul>
+<li><span>de données : Zenodo (CERN) pour les données libres de droit, Figshare</span></li>
+<li><span>de codes : Software Heritage : rassemble toutes les versions de codes des différentes forges. Il collecte, mais aussi référence tous les développements avec des url pérennes.</span>
+<span>sions de codes des différentes forges. Il collecte, mais aussi référence tous les développements avec des url pérennes.</span></li>
+</ul><h3 id="“Aspect-Humains”" data-id="“Aspect-Humains”"><a class="anchor hidden-xs" href="#“Aspect-Humains”" title="“Aspect-Humains”"><span class="octicon octicon-link"></span></a><span>“Aspect Humains”</span></h3><p><span>Il existe des manifestes.</span></p><p><a href="https://software-carpentry.org/" target="_blank" rel="noopener"><span>Software carpentry</span></a></p><p><span>En tant que communauté il est possible d’agir.</span></p><p><span>Le faire progressivement.</span></p><p><span>Ouvrir la science :</span><a href="https://www.ouvrirlascience.fr/" target="_blank" rel="noopener"><span>https://www.ouvrirlascience.fr/</span></a><span> ?</span></p><h2 id="R-Markdown" data-id="R-Markdown"><a class="anchor hidden-xs" href="#R-Markdown" title="R-Markdown"><span class="octicon octicon-link"></span></a><span>R Markdown</span></h2><h3 id="Présentation" data-id="Présentation"><a class="anchor hidden-xs" href="#Présentation" title="Présentation"><span class="octicon octicon-link"></span></a><span>Présentation</span></h3><p><span>Produire des documents reproductibles avec R markdown : Partager code et documentation</span></p><p><span>Tricoter son document que l’on peut partager avec ses collègues.</span></p><p><span>chunk : un morceau de code dans un document de </span><em><span>literate programming</span></em><span>.</span></p><p><span>literate de programmation:</span>
+<em><span>“Expliquer à des êtres humains ce que nous voulons que l’ordinateur fasse”</span></em><span> Knuth 1970</span></p><p><span>Permet de suive le cheminent de la pensée.</span></p><p><span>Un gain géneral de la reproductibilité + partage</span></p><p><span>balisage léger+ langage de programmation (R, Python, SQL…)</span></p><p><span>Usage de la communauté</span></p><p><span>2012, Yihui Xie -&gt; knitr</span>
+<span>2014 -&gt; rmarkdown</span></p><p><span>Il y a beaucoup de packages qui dependent de rmarkdown.</span></p><p><span>Repose sur:</span></p><ul>
+<li><span>Markdown</span></li>
+<li><span>R Markdown : encapsule du code dans des chunks qui va l’executer</span></li>
+<li><span>Knitr</span></li>
+<li><span>Pandoc convertit md en plus structuré</span></li>
+</ul><p><span>Un doc R Markdow contient 3 éléments:</span></p><ul>
+<li><span>des metadonnées avec le </span><a href="https://en.wikipedia.org/wiki/YAML" target="_blank" rel="noopener"><span>YAML</span></a></li>
+<li><span>texte : decrit le cheminement</span></li>
+<li><span>Bloc de code</span>
+<span>Plusieurs formats possibles en sortie : html, sorties de site web</span></li>
+</ul><p><em><span>kniter</span></em><span> / tricoter le document = produit le document</span></p><p><span>Avec la même syntaxe Rmarkdown on peut faire plein de choses différentes, il suffit d’utiliser le bon “backend”:</span></p><ul>
+<li><a href="https://bookdown.org/home/" target="_blank" rel="noopener"><span>Bookdown</span></a><span> = plusieurs rmarkdown pour créer un manuel par exemple (</span><a href="https://geocompr.robinlovelace.net/" target="_blank" rel="noopener"><span>https://geocompr.robinlovelace.net/</span></a><span>). On peut avoir des tabs / onglets correspondant à la methode developpée.</span></li>
+<li><a href="https://github.com/yihui/xaringan" target="_blank" rel="noopener"><span>xarigan</span></a><span> (pour les slides)</span></li>
+<li><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener"><span>blogdown</span></a><span> (pour les sites webs basé sur </span><a href="https://gohugo.io/" target="_blank" rel="noopener"><span>HUGO</span></a><span>)</span></li>
+<li><a href="https://github.com/rstudio/rticles" target="_blank" rel="noopener"><span>Rticles</span></a><span> pour les articles (fournit plein de styles par défaut)</span>
+<span>webw</span></li>
+</ul><h3 id="Faire-son-Rmarkdown" data-id="Faire-son-Rmarkdown"><a class="anchor hidden-xs" href="#Faire-son-Rmarkdown" title="Faire-son-Rmarkdown"><span class="octicon octicon-link"></span></a><span>Faire son Rmarkdown</span></h3><p><span>Etape 1: se préparer</span></p><ul>
+<li><span>Travailler en projet via Rstudio (gestion des liens en relatif)</span></li>
+<li><span>Organiser son espace de travail. Possibilité de s’inspirer de </span><a href="https://github.com/benmarwick/rrtools" target="_blank" rel="noopener"><span>https://github.com/benmarwick/rrtools</span></a><span> qui fournit des scripts R qui automatisent la création du répertoire, de la licence, du README, etc.</span></li>
+</ul><p><span>R studio est un </span><a href="https://en.wikipedia.org/wiki/Integrated_development_environment" target="_blank" rel="noopener"><span>IDE</span></a><span>: environnement de développement</span></p><p><span>Il propose des modèles paramétrables.</span></p><p><span>Questions: autour de l’accés aux données, liens vers des entrepots de données, controles sur l’evolution de ces sources ? -&gt; dépasse la question du Rmarkdown</span></p><h3 id="Syntaxe-markdown" data-id="Syntaxe-markdown"><a class="anchor hidden-xs" href="#Syntaxe-markdown" title="Syntaxe-markdown"><span class="octicon octicon-link"></span></a><span>Syntaxe markdown</span></h3><p><span>Passe du md en html</span></p><p><span>Pour les tables : </span><a href="https://www.tablesgenerator.com/" target="_blank" rel="noopener"><span>Tables Generator</span></a></p><p><span>Parfois besoin de compléter avec du html.</span></p><h3 id="Bonnes-pratiques-de-codes" data-id="Bonnes-pratiques-de-codes"><a class="anchor hidden-xs" href="#Bonnes-pratiques-de-codes" title="Bonnes-pratiques-de-codes"><span class="octicon octicon-link"></span></a><span>Bonnes pratiques de codes</span></h3><p><span>Decomposer le code</span></p><ul>
+<li><span>Respecter indentation, hiérarchie</span></li>
+<li><span>Organiser ses commentaires. Distinction entre le texte et le commentaire</span></li>
+<li><span>Des noms d’objets prononcables et révélateur</span></li>
+<li><span>Virer la dépendance si peu de ligne  de code</span></li>
+<li><span>Cibler la langue en fonction du public</span></li>
+</ul><h3 id="Fonctionnement-du-R-Markdown" data-id="Fonctionnement-du-R-Markdown"><a class="anchor hidden-xs" href="#Fonctionnement-du-R-Markdown" title="Fonctionnement-du-R-Markdown"><span class="octicon octicon-link"></span></a><span>Fonctionnement du R Markdown</span></h3><p><span>chunks = trocons délimité par des backticks</span></p><p><span>On peut avoir un setup chunk avec les paramètres que l’on souhaite par defaut.</span></p><p><span>mettre en fin du markdown : ‘sessioninfo::session_info()’</span>
+<span>Ca permet d’avoir des infos sur sa session : quel langage, etc.</span></p><h1 id="Mardi-29-juin" data-id="Mardi-29-juin"><a class="anchor hidden-xs" href="#Mardi-29-juin" title="Mardi-29-juin"><span class="octicon octicon-link"></span></a><span>Mardi 29 juin</span></h1><h2 id="Présenter-vos-travaux-en-Markdown" data-id="Présenter-vos-travaux-en-Markdown"><a class="anchor hidden-xs" href="#Présenter-vos-travaux-en-Markdown" title="Présenter-vos-travaux-en-Markdown"><span class="octicon octicon-link"></span></a><span>Présenter vos travaux en Markdown</span></h2><p><span>Plus d’abdo avec R et Rmarkdown qu’avec ppt</span></p><p><span>Pro:</span></p><ul>
+<li><span>Tout se fait dans un meme environnement</span></li>
+<li><span>adapter pour du code</span></li>
+<li><span>partage/versionning via git</span></li>
+</ul><p><span>cons:</span></p><ul>
+<li><span>pris en main plus compliqué</span></li>
+<li><span>besoin de connaissance CSS/html</span></li>
+</ul><p><span>Il y a des packages pour améliorer les présentations.</span></p><p><span>Avec Xaxingan:</span>
+<span>- Ninja</span>
+<span>- Ninja avec theme</span></p><h3 id="en-tête" data-id="en-tête"><a class="anchor hidden-xs" href="#en-tête" title="en-tête"><span class="octicon octicon-link"></span></a><span>en tête</span></h3><p><span>On a un YAML.</span></p><p><span>il y a différentes options.</span></p><p><code>seal</code><span> desactiver la première slide de la présentation (dans les output)</span></p><p><span>On peut activer des librairies JS.</span></p><h3 id="contenu" data-id="contenu"><a class="anchor hidden-xs" href="#contenu" title="contenu"><span class="octicon octicon-link"></span></a><span>contenu</span></h3><p><span>—  fait une nouvelle diapo</span></p><p><span>On peut cloner l’ecran.</span></p><p><span>Présenter facilement du code avec coloration synthaxique et l’option highlight pour souligner les lignes de codes.</span></p><p><span>Marche pour R et d’autres langages.</span></p><p><code>&lt;ins&gt;souligngé&lt;/ins&gt;</code></p><p><span>On peut définir des classes spécifiques pour des contenus dans une slide.ex : deux contenus en vis-à-vis (pull-left)</span></p><p><span>Il y a des classes CSS par defaut et on peut personnaliser au besoin.</span></p><p><span>On peut définir des élements pour toutes les slides avec </span><code>layout</code><span> (créer ses modeles de slide)</span></p><p><span>On peut y intégrer tous les éléments d’une page web : carte Leaflet, du code JavaScript…</span></p><p><span>Pour personnaliser sa présentation, soit créer son propre fichier .css , soit avec le package xaringanthemer, qui permet de modifier directement le style css dans l’environnement R Studio.</span>
+<span>Associer également des styles pour ggplot</span></p><p><strong><span>xaringanthemer</span></strong><span> va ecrire le fichier .css dans la racine de la présentation.</span></p><p><strong><a href="https://github.com/gadenbuie/xaringanExtra" target="_blank" rel="noopener"><span>xaringanExtra</span></a></strong><span>: Possibilité de rendre du texte editable mais pas sauvegardé (penser à faire une capture d’ecran).</span></p><p><span>Possibilité d’ajout d’un countdown / minuteur</span></p><pre><code class="r hljs"><div class="wrapper"><div class="gutter linenumber"><span></span></div><div class="code">library<span class="token punctuation">(</span>countdown<span class="token punctuation">)</span>
+</div></div></code></pre><p><span>il existe une option pour encapsuler tout les fichiers annexes dans un seul fichier </span><code>selfcontained = true</code><span> (probablement pas la bonne commande)</span></p><h2 id="intro-à-Git" data-id="intro-à-Git"><a class="anchor hidden-xs" href="#intro-à-Git" title="intro-à-Git"><span class="octicon octicon-link"></span></a><span>intro à Git</span></h2><p><span>Pour Windows, dans R Studio, aller dans terminal choisir GitBash, puis recréer un terminal dans Tools Terminal New terminal.</span></p><p><span>obj: configurer Git et Github et partager une présentation</span></p><p><span>possibilité de GitLab avec Huma-Num</span></p><p><span>imspiration : </span><a href="https://happygitwithr.com/" target="_blank" rel="noopener"><span>https://happygitwithr.com/</span></a></p><ol>
+<li><span>créer un compte sur GitHub</span></li>
+</ol><p><span>dans R Studio ouvrir le terminal</span></p><pre><code class="bash hljs"><div class="wrapper"><div class="gutter linenumber"><span></span>
+<span></span></div><div class="code"><span class="hljs-built_in">which</span> git
+git --version
+</div></div></code></pre><p><img src="https://i.imgur.com/tockFL5.gif" alt="" loading="lazy"></p><ol start="2">
+<li>
+<p><span>configuer sur la machine en local</span></p>
+</li>
+<li>
+<p><span>faire le lien entre la machine en local</span></p>
+<ul>
+<li><span>HTTPS</span></li>
+<li><span>SSH (couple de clefs : une publique avec .pub et une privée)</span>
+<span>C’est la clef publique que l’on doit communiquer à la forge.</span></li>
+</ul>
+</li>
+<li>
+<p><span>Verifier et activer le gestionnaire de clefs ici </span><code>ssh-agent</code></p>
+</li>
+<li>
+<p><span>Ajouter la clef</span></p>
+</li>
+</ol><p><strong><span>Workflow</span></strong></p><pre class="mermaid" data-processed="true"><svg id="mermaid-1625480158125" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="432" style="max-width: 299.0833435058594px;" viewBox="0 0 299.0833435058594 432"><style>#mermaid-1625480158125{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1625480158125 .error-icon{fill:#552222;}#mermaid-1625480158125 .error-text{fill:#552222;stroke:#552222;}#mermaid-1625480158125 .edge-thickness-normal{stroke-width:2px;}#mermaid-1625480158125 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1625480158125 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1625480158125 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1625480158125 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1625480158125 .marker{fill:#333333;stroke:#333333;}#mermaid-1625480158125 .marker.cross{stroke:#333333;}#mermaid-1625480158125 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1625480158125 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1625480158125 .cluster-label text{fill:#333;}#mermaid-1625480158125 .cluster-label span{color:#333;}#mermaid-1625480158125 .label text,#mermaid-1625480158125 span{fill:#333;color:#333;}#mermaid-1625480158125 .node rect,#mermaid-1625480158125 .node circle,#mermaid-1625480158125 .node ellipse,#mermaid-1625480158125 .node polygon,#mermaid-1625480158125 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1625480158125 .node .label{text-align:center;}#mermaid-1625480158125 .node.clickable{cursor:pointer;}#mermaid-1625480158125 .arrowheadPath{fill:#333333;}#mermaid-1625480158125 .edgePath .path{stroke:#333333;stroke-width:1.5px;}#mermaid-1625480158125 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1625480158125 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1625480158125 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1625480158125 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1625480158125 .cluster text{fill:#333;}#mermaid-1625480158125 .cluster span{color:#333;}#mermaid-1625480158125 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80,100%,96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1625480158125:root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-etape1 LE-etape2" style="opacity: 1;" id="L-etape1-etape2"><path class="path" d="M149.5416717529297,51.19999694824219L149.5416717529297,55.36666361490885C149.5416717529297,59.53333028157552,149.5416717529297,67.86666361490886,149.5416717529297,76.19999694824219C149.5416717529297,84.53333028157552,149.5416717529297,92.86666361490886,149.5416717529297,97.03333028157552L149.5416717529297,101.19999694824219" marker-end="url(#arrowhead54)" style="fill:none"></path><defs><marker id="arrowhead54" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath LS-etape2 LE-etape3" style="opacity: 1;" id="L-etape2-etape3"><path class="path" d="M149.5416717529297,144.39999389648438L149.5416717529297,148.56666056315103C149.5416717529297,152.73332722981772,149.5416717529297,161.06666056315103,149.5416717529297,169.39999389648438C149.5416717529297,177.73332722981772,149.5416717529297,186.06666056315103,149.5416717529297,190.23332722981772L149.5416717529297,194.39999389648438" marker-end="url(#arrowhead55)" style="fill:none"></path><defs><marker id="arrowhead55" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath LS-etape3 LE-etape4" style="opacity: 1;" id="L-etape3-etape4"><path class="path" d="M149.5416717529297,237.59999084472656L149.5416717529297,241.76665751139322C149.5416717529297,245.9333241780599,149.5416717529297,254.26665751139322,149.5416717529297,262.59999084472656C149.5416717529297,270.9333241780599,149.5416717529297,279.26665751139325,149.5416717529297,283.4333241780599L149.5416717529297,287.59999084472656" marker-end="url(#arrowhead56)" style="fill:none"></path><defs><marker id="arrowhead56" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath LS-etape4 LE-etape5" style="opacity: 1;" id="L-etape4-etape5"><path class="path" d="M149.5416717529297,330.79998779296875L149.5416717529297,334.96665445963544C149.5416717529297,339.13332112630206,149.5416717529297,347.46665445963544,149.5416717529297,355.79998779296875C149.5416717529297,364.13332112630206,149.5416717529297,372.46665445963544,149.5416717529297,376.63332112630206L149.5416717529297,380.79998779296875" marker-end="url(#arrowhead57)" style="fill:none"></path><defs><marker id="arrowhead57" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-etape1-etape2" class="edgeLabel L-LS-etape1' L-LE-etape2"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-etape2-etape3" class="edgeLabel L-LS-etape2' L-LE-etape3"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-etape3-etape4" class="edgeLabel L-LS-etape3' L-LE-etape4"></span></div></foreignObject></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-etape4-etape5" class="edgeLabel L-LS-etape4' L-LE-etape5"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node clickable" style="opacity: 1;" id="flowchart-etape1-46" transform="translate(149.5416717529297,29.599998474121094)"><a class="clickable" href="https://sigr2021.github.io/git/#26" rel="noopener"><rect rx="0" ry="0" x="-103.61666870117188" y="-21.599998474121094" width="207.23333740234375" height="43.19999694824219" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-93.61666870117188,-11.599998474121094)"><foreignObject width="187.23333740234375" height="23.199996948242188"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Création du dépot Github</div></foreignObject></g></g></a></g><g class="node clickable" style="opacity: 1;" id="flowchart-etape2-47" transform="translate(149.5416717529297,122.79999542236328)"><a class="clickable" href="https://sigr2021.github.io/git/#27" rel="noopener"><rect rx="0" ry="0" x="-128.2249984741211" y="-21.599998474121094" width="256.4499969482422" height="43.19999694824219" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-118.2249984741211,-11.599998474121094)"><foreignObject width="236.4499969482422" height="23.199996948242188"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Cloner le repo dans sa machine</div></foreignObject></g></g></a></g><g class="node clickable" style="opacity: 1;" id="flowchart-etape3-49" transform="translate(149.5416717529297,215.99999237060547)"><a class="clickable" href="https://sigr2021.github.io/git/#28" rel="noopener"><rect rx="0" ry="0" x="-66" y="-21.599998474121094" width="132" height="43.19999694824219" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-56,-11.599998474121094)"><foreignObject width="112" height="23.199996948242188"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Créer un projet</div></foreignObject></g></g></a></g><g class="node clickable" style="opacity: 1;" id="flowchart-etape4-51" transform="translate(149.5416717529297,309.19998931884766)"><a class="clickable" href="https://sigr2021.github.io/git/#33" rel="noopener"><rect rx="0" ry="0" x="-127.51666259765625" y="-21.599998474121094" width="255.0333251953125" height="43.19999694824219" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-117.51666259765625,-11.599998474121094)"><foreignObject width="235.0333251953125" height="23.199996948242188"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Faire une nouvelle présentation</div></foreignObject></g></g></a></g><g class="node clickable" style="opacity: 1;" id="flowchart-etape5-53" transform="translate(149.5416717529297,402.39998626708984)"><a class="clickable" href="https://sigr2021.github.io/git/#35" rel="noopener"><rect rx="0" ry="0" x="-141.5416717529297" y="-21.599998474121094" width="283.0833435058594" height="43.19999694824219" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-131.5416717529297,-11.599998474121094)"><foreignObject width="263.0833435058594" height="23.199996948242188"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Faire un commit sur la présentation</div></foreignObject></g></g></a></g></g></g></g></svg></pre><p><span>Avant de déposer, pousser sur Github, ne pas oublier de faire un pull, pour récupérer les fichiers en local, au cas où une autre personne aurait modifié en même temps.</span></p><p><span>Réaliser un fork : avoir une copie du dépot en local</span></p><h3 id="Ressources" data-id="Ressources"><a class="anchor hidden-xs" href="#Ressources" title="Ressources"><span class="octicon octicon-link"></span></a><span>Ressources</span></h3><p><span>Pour les utilisateurs de windows, quelques informations sur comment installer pas à pas </span><a href="https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/-/blob/master/module2/ressources/gitlab_fr.org" target="_blank" rel="noopener"><span>https://gitlab.inria.fr/learninglab/mooc-rr/mooc-rr-ressources/-/blob/master/module2/ressources/gitlab_fr.org</span></a></p><h3 id="Trivia" data-id="Trivia"><a class="anchor hidden-xs" href="#Trivia" title="Trivia"><span class="octicon octicon-link"></span></a><span>Trivia:</span></h3><p><span>Mes commits en starwars:</span></p><p><span>Modele: </span><a href="http://starlogs.net/" target="_blank" rel="noopener"><span>http://starlogs.net/</span></a><span>&lt;#user&gt;/&lt;repo&gt;</span></p><p><a href="http://starlogs.net/#defuneste/arbresosm" target="_blank" rel="noopener"><span>http://starlogs.net/#defuneste/arbresosm</span></a></p><h2 id="SIG-et-Cartography" data-id="SIG-et-Cartography"><a class="anchor hidden-xs" href="#SIG-et-Cartography" title="SIG-et-Cartography"><span class="octicon octicon-link"></span></a><span>SIG et Cartography</span></h2><p><a href="https://nowosad.github.io/SIGR2021/" target="_blank" rel="noopener"><span>https://nowosad.github.io/SIGR2021/</span></a></p><p><span>R pour les statitiques, evolution pour les données spacialisées.</span></p><p><span>Obj: donner une vue d’ensemble de l’ecosysteme avec R</span></p><p><span>ecrire des scripts -&gt; ecrire des packages -&gt; partage sa recherche de manière partagée</span></p><p><span>“je peux coder une nouvelle idée et regarder comment elle se materialise”</span></p><p><span>Pour partager du code:</span></p><p><a href="https://rustpad.io/#uFuBVH" target="_blank" rel="noopener"><span>https://rustpad.io/#uFuBVH</span></a></p><p><span>Après le cours:</span></p><ul>
+<li><span>SO pour des questions generales / reponses rapides</span></li>
+<li><span>Rstudio community</span></li>
+<li><span>GIS SE</span></li>
+<li><span>R-SIG-GEO</span></li>
+</ul><h3 id="créer-une-reprex--exemple-reproductif" data-id="créer-une-reprex--exemple-reproductif"><a class="anchor hidden-xs" href="#créer-une-reprex--exemple-reproductif" title="créer-une-reprex--exemple-reproductif"><span class="octicon octicon-link"></span></a><span>créer une reprex : exemple reproductif</span></h3><p><span>package </span><code>reprex</code></p><p><code>rstudioapi::openProject("&lt;path&gt;")</code></p><p><code>reprex::reprex()</code><span> Besoin d’avoir le code surligné</span></p><h3 id="GIS-ecosystem-of-R" data-id="GIS-ecosystem-of-R"><a class="anchor hidden-xs" href="#GIS-ecosystem-of-R" title="GIS-ecosystem-of-R"><span class="octicon octicon-link"></span></a><span>GIS ecosystem of R</span></h3><p><span>Différentes disciplines</span></p><p><span>Différentes utilisations (EDA, I/O, data processing, data viz, web map, software dev.)</span></p><p><span>Pourquoi R ou un autre outils ?</span></p><p><strong><span>Partager ses idées avec R</span></strong><span>:</span></p><ul>
+<li><span>Rmarkdown</span></li>
+<li><span>rpubs</span></li>
+</ul><p><span>Commencer small et construire dessus.</span></p><p><strong><span>Partager son workflow</span></strong></p><p><a href="http://excalidraw.com" target="_blank" rel="noopener"><span>excalidraw.com</span></a></p><p><strong><span>Construire ses propres packages et codes</span></strong></p><p><a href="https://www.oreilly.com/library/view/r-packages/9781491910580/" target="_blank" rel="noopener"><span>R Packages</span></a></p><p><span>Faire un package: une idée et un problème</span></p><p><span>un exemple : travailler un jeux de données, le nettoyer et partager se travail</span></p><h3 id="R-package" data-id="R-package"><a class="anchor hidden-xs" href="#R-package" title="R-package"><span class="octicon octicon-link"></span></a><span>R package</span></h3><p><span>On peut appeller certains GIS via R</span></p><p><span>Il y a des packages generiques et des plus specialisés</span></p><p><span>citer un package:</span></p><p><code>citation("tmap")</code><span> - un pour un paquet</span></p><p><span>Permet de montrer le travail.</span></p><h3 id="R-spatial-infrastructure" data-id="R-spatial-infrastructure"><a class="anchor hidden-xs" href="#R-spatial-infrastructure" title="R-spatial-infrastructure"><span class="octicon octicon-link"></span></a><span>R spatial infrastructure</span></h3><p><span>Différents niveaux</span></p><ul>
+<li><span>Package de R</span></li>
+<li><span>Bibliothèques exterieur à R: utiliser par d’autres software</span></li>
+</ul><p><span>Etre sur les epaules des geants / layer of complexity</span></p><h3 id="pont-vers-d’autres-logiciels" data-id="pont-vers-d’autres-logiciels"><a class="anchor hidden-xs" href="#pont-vers-d’autres-logiciels" title="pont-vers-d’autres-logiciels"><span class="octicon octicon-link"></span></a><span>pont vers d’autres  logiciels</span></h3><p><code>qgisprocess</code><span> connect vers QGIS</span></p><p><span>On peut aussi appeller un script de R dans QGIS</span></p><p><span>Package pour vector data et accés à des BD: </span><code>sf</code></p><p><span>Pourquoi a-t-on besoin de spatial class : dans un programme il peut y avoir des tas de facon de une chose. Il y a différentes facon d’encoder un type de donnnée.</span></p><p><span>Dans un sf: une donnée spatiale est representé comme un tableau</span></p><p><span>Pour les données raster: </span><code>raster</code><span> et on bouge sur </span><code>terra</code><span> ou </span><code>stars</code></p><p><span>raster comme geotiff pour </span><code>terra</code></p><p><span>pour </span><code>stars</code><span> raster comme un data cube &lt;- in progress</span></p><p><code>terra</code><span> une classe, resolutions, bbox, +, source (peut être en memoire ou path)</span></p><p><span>Les objets de terra sont des vecteurs de valeurs</span></p><h3 id="Mapping-ecosytem" data-id="Mapping-ecosytem"><a class="anchor hidden-xs" href="#Mapping-ecosytem" title="Mapping-ecosytem"><span class="octicon octicon-link"></span></a><span>Mapping ecosytem</span></h3><p><span>Différentes facons de faire de la cartographie / visualisation</span></p><p><span>tmap permet de lire bcp de format de classes spatiales dans R et permet de génerer des cartes statiques et dynamiques.</span></p><p><span>il y a des fonctions pour les couches (?) de formes et des fonctions pour les couches(?) d’attributs et +.</span></p><p><code>mapview</code><span> vue rapide des données</span></p><p><code>mapdeck</code><span> permet d’extruder des polygones par ex.</span></p><p><code>gganimate</code><span> permet de réaliser des animations pour montrer des variations spatiales et temporelles</span></p><h3 id="CRS" data-id="CRS"><a class="anchor hidden-xs" href="#CRS" title="CRS"><span class="octicon octicon-link"></span></a><span>CRS</span></h3><p><span>coordonnées projetées et coordonnées géographiques</span></p><p><span>Dessiner des cartes et aussi changer d’une à l’autre</span></p><p><a href="https://ihatecoordinatesystems.com/" target="_blank" rel="noopener"><span>https://ihatecoordinatesystems.com/</span></a></p><h3 id="Geocomputation" data-id="Geocomputation"><a class="anchor hidden-xs" href="#Geocomputation" title="Geocomputation"><span class="octicon octicon-link"></span></a><span>Geocomputation</span></h3><p><span>Openshaw, 2000</span></p><p><span>Building and creating geotools but also sharing it.</span></p><h1 id="Mercredi-30" data-id="Mercredi-30"><a class="anchor hidden-xs" href="#Mercredi-30" title="Mercredi-30"><span class="octicon octicon-link"></span></a><span>Mercredi 30</span></h1><p><span>C’est parti</span></p><p><span>slack si question: </span><a href="https://join.slack.com/t/geocomprworkspace/shared_invite/zt-sc7tqriq-9Q2rkveZwqCAQoBS3yqZNQ" target="_blank" rel="noopener"><span>https://join.slack.com/t/geocomprworkspace/shared_invite/zt-sc7tqriq-9Q2rkveZwqCAQoBS3yqZNQ</span></a></p><p><span>Accès au support : </span><a href="https://nowosad.github.io/SIGR2021/workshop1/workshop1_rl.html#1" target="_blank" rel="noopener"><span>https://nowosad.github.io/SIGR2021/workshop1/workshop1_rl.html#1</span></a></p><p><span>Meeting zoom:</span>
+<span>Sujet : SIGR 2021 - Wenesday</span>
+<span>Heure : 30 juin 2021 09:00 AM Paris</span></p><p><span>Participer à la réunion Zoom</span>
+<a href="https://univ-eiffel.zoom.us/j/85952107647" target="_blank" rel="noopener"><span>https://univ-eiffel.zoom.us/j/85952107647</span></a></p><p><span>ID de réunion : 859 5210 7647</span>
+<span>Mot de passe : Vxv6h5LT</span></p><h2 id="Comment-importer-des-données" data-id="Comment-importer-des-données"><a class="anchor hidden-xs" href="#Comment-importer-des-données" title="Comment-importer-des-données"><span class="octicon octicon-link"></span></a><span>Comment importer des données</span></h2><ul>
+<li><span>data dans un pakages</span></li>
+<li><span>data fournit via un package</span></li>
+<li><span>data via OSM</span></li>
+<li><span>data via website</span></li>
+</ul><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span></div><div class="code">pkgs = c(
+        <span class="hljs-string">"spData"</span>,
+        <span class="hljs-string">"osmdata"</span>,
+        <span class="hljs-string">"osmextract"</span>,
+        <span class="hljs-string">"nzelect"</span>
+        )
+
+remotes::install_cran(pkgs) <span class="hljs-comment"># ne reinstalle pas les packages </span>
+
+<span class="hljs-comment"># si ils sont deja présents</span>
+</div></div></code></pre><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span>
+<span></span>
+<span></span>
+<span></span></div><div class="code"><span class="hljs-class"><span class="hljs-keyword">library</span>(<span class="hljs-params">spData</span>)
+<span class="hljs-title"><span class="hljs-keyword">library</span></span>(<span class="hljs-params">osmdata</span>)
+<span class="hljs-title"><span class="hljs-keyword">library</span></span>(<span class="hljs-params">osmextract</span>)
+<span class="hljs-title"><span class="hljs-keyword">library</span></span>(<span class="hljs-params">nzelect</span>)
+</span></div></div></code></pre><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span></div><div class="code"><span class="hljs-string">?d</span>atasets <span class="hljs-comment"># pour trouver la commande suivante</span>
+
+library(help = <span class="hljs-string">"datasets"</span>)  <span class="hljs-comment"># liste des jeux de données dans R</span>
+
+world_phones_new &lt;- datasets::WorldPhones <span class="hljs-comment"># on charge le package</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span>(<span class="hljs-title">world_phones_new</span>) <span class="hljs-comment"># on regarde ce qu'il y a dedans (macherait aussi avec la commande str)</span></span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span>(<span class="hljs-title">spData::nz</span>)  <span class="hljs-comment"># fonction class précise le type s'il s'agit de dataframe, matrix, vector...</span></span>
+</div></div></code></pre><p><code>class()</code><span> retourne la classe de l’objet R</span></p><p><code>str()</code><span> retourne la structure du jeux de données</span></p><p><span>Une bonne approche est d’utiliser un petit jeu de donnée plutot que sur tout le jeux de donnée afin de prototyper.</span>
+<span>Question : how small an example should be ?</span></p><p><span>Robin : assez grand pour demontrer la méthode et assez petit pour le charger, et on peut en faire plusieurs</span></p><p><em><span>Exercice</span></em><span> : on télécharge une base de donnée (un objet) du package datasets. Celles-ci sont listées grâce à library(help=datasets).</span></p><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span></div><div class="code">mapview::mapview(abstr::montlake_buildings)
+</div></div></code></pre><p><span>Je ne comprends pas à quoi correspond la ligne précédente : d’où vient Montlake_buildings ? &lt;- c’est un jeu de donnée qui vient du package abstr</span></p><p><span>syntaxe : nom_package::fonction_du_package</span></p><p><span>exemple : sf::read_sf &lt;- package sf avec la fonction read_sf</span></p><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span>
+<span></span>
+<span></span></div><div class="code">plot(nz<span class="hljs-variable">$geom</span>) <span class="hljs-comment"># ajuste la geometry</span>
+
+plot(nz[<span class="hljs-string">"Island"</span>]) 
+</div></div></code></pre><p><span>Un concept important est de garder la donnée originale safe.</span></p><p><span>On va donc reassigner à un objet d’exemple </span><code>nz2 &lt;- nz</code><span> et </span><code>nz2 = nz</code><span> est pareil</span></p><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span></div><div class="code">library(nzelect) # on charge le paket avec des infos sur Nz en plus
+nz_longlat &lt;-  sf::<span class="hljs-built_in">st_transform</span>(nz, <span class="hljs-number">4326</span>) # reproject nz
+<span class="hljs-built_in">names</span>(voting_places)
+
+voting_places_sf &lt;- sf::<span class="hljs-built_in">st_as_sf</span>(voting_places, coords = <span class="hljs-built_in">c</span>(<span class="hljs-string">"longitude"</span>, <span class="hljs-string">"latitude"</span>))
+
+<span class="hljs-built_in">plot</span>(sf::<span class="hljs-built_in">st_geometry</span>(nz_longlat))
+<span class="hljs-built_in">plot</span>(voting_places_sf, add = TRUE)
+
+</div></div></code></pre><p><span>Pour utiliser les fonctions d’un package </span><strong><span>que l’on a déjà installé</span></strong><span>, on peut soit charger le package entier avec </span><code>library()</code><span> :</span></p><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span>
+<span></span></div><div class="code"><span class="hljs-class"><span class="hljs-keyword">library</span>(<span class="hljs-params">sf</span>)
+<span class="hljs-title">st_crs</span>(<span class="hljs-params">nz</span>)
+</span></div></div></code></pre><p><span>ou bien utiliser </span><code>pkg::</code><span> pour chaque fonctions :</span></p><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span></div><div class="code">sf::<span class="hljs-built_in">st_crs</span>(nz)
+</div></div></code></pre><p><span>L’avantage de la deuxième solution est de de rendre explicite l’origine des fonctions que l’on utilise et de ne pas surcharger l’espace des fonctions, cela évite les conflits (entre 2 packages qui auraient des fonctions portant le même nom).</span></p><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span></div><div class="code"><span class="hljs-attribute">vsub</span> &lt;- voting_places_sf[nz,] <span class="hljs-comment"># va retourner un msg avec un pb de crs</span>
+</div></div></code></pre><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span></div><div class="code">sf::st_crs(nz) <span class="hljs-comment"># retourne le wkt du crs de ns</span>
+</div></div></code></pre><p><span>Quand on a des données sans CRS on peut le donner</span></p><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span></div><div class="code"><span class="hljs-attribute">voting_places_sf</span> <span class="hljs-comment"># NA en CRS</span>
+</div></div></code></pre><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span></div><div class="code">sf::st_crs(voting_places_sf) &lt;- sf::st_crs(nz_longlat) <span class="hljs-comment"># ici on va le crs de nz</span>
+</div></div></code></pre><p><span>Ici devrait marcher (pe optimum dans le workflow)</span></p><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span>
+<span></span>
+<span></span>
+<span></span></div><div class="code"><span class="hljs-title">voting_places_sflonglat</span> &lt;- sf::st_transform(voting_places_sf, <span class="hljs-number">4326</span>)
+
+<span class="hljs-title">vsub</span> &lt;- voting_places_sflonglat[nz_longlat,]
+
+</div></div></code></pre><p><span>(installer packages {pryr} {repr} {skimr} {mapview} car ne fonctionne pas nécessairement avec le ::)</span></p><p><span>si on a ecrit une fonction sur github  on peut la charger dans notre environnement avec </span><code>source</code></p><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span></div><div class="code"><span class="hljs-built_in">source</span>(<span class="hljs-string">"https://github.com/Nowosad/SIGR2021/raw/master/workshop1/osm_combine.R"</span>)
+</div></div></code></pre><p><span>attention à bien faire cela pour obtenir le link en </span><em><span>raw</span></em><span> :</span></p><p><img src="https://i.imgur.com/NB1pSFp.gif" alt="" loading="lazy"></p><p><span>Si on utilise osmextract le code de dessous montre comment on peut choisir une zone de delimitation des objets que l’on veut récupérer.</span></p><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span>
+<span></span>
+<span></span></div><div class="code"><span class="hljs-title">gzones</span> &lt;- osmextract::geofabrik_zones
+<span class="hljs-title">gzones_france</span> &lt;- gzones %&gt;% filter(parent == <span class="hljs-string">"france"</span>)
+<span class="hljs-title">gzones_france</span>$name
+</div></div></code></pre><h2 id="getting-started-with-tmap-package" data-id="getting-started-with-tmap-package"><a class="anchor hidden-xs" href="#getting-started-with-tmap-package" title="getting-started-with-tmap-package"><span class="octicon octicon-link"></span></a><span>getting started with tmap package</span></h2><p><span>On veut utiliser des données raster (</span><code>terra</code><span>) et vector (</span><code>sf</code><span>).</span></p><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span></div><div class="code"><span class="hljs-keyword">library</span>(sf)
+<span class="hljs-keyword">library</span>(terra)
+<span class="hljs-keyword">library</span>(tmap)
+
+remotes::install_github(<span class="hljs-string">"Nowosad/spDataLarge"</span>)
+nz_elev &lt;- rast(system<span class="hljs-variable">.file</span>(<span class="hljs-string">"raster/nz_elev.tif"</span>, <span class="hljs-keyword">package</span> = <span class="hljs-string">"spDataLarge"</span>))
+</div></div></code></pre><p><span>le point de départ est la donnée spatiale</span></p><p><code>tm_shape(mon_objet_spatial) + </code><span> et on ajouter des layers pour la visualiser (ATTENTION si on met juste la commande sans autres options avec des “+” ça ne marche pas)</span></p><p><span>il faut aussi rajouter d’autres objets à la legende si non compris dans le premier objet spatial</span></p><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span></div><div class="code">tm_shape(nz_elev) +
+  tm_raster(title = <span class="hljs-string">"Elevation (m asl)"</span>, 
+            style = <span class="hljs-string">"pretty"</span>,
+            palette = <span class="hljs-string">"-Spectral"</span>)
+            
+</div></div></code></pre><p><span>pour explorer les couleurs</span></p><pre><code class="r= hljs"><div class="wrapper"><div class="gutter linenumber"><span></span></div><div class="code">tmaptools::<span class="hljs-built_in">palette_explorer</span>()
+</div></div></code></pre><p><span>Les positions des attribute layers ne se superposent pas si elles sont indiuqés aux meme endroits </span><code>c("right", "bottom")</code></p><p><span>il est important de garder un ordre dans l’affichage des layers : ex si on veut les graticules en fond il faut les mettres en premier</span></p><p><span>layout : concerne toute la cartes.</span></p><p><span>ex </span><code>tm_layout(bg.color = "lightblue")</code><span> va nettre un fond bleu</span></p><p><code>legend.outside</code><span> option qui permet dans tm_layout de mettre la légende en dehors de la carte</span></p><p><span>On peut ajouter des marges ordre:   bottom , left , top, right</span></p><p><span>Dans tmap il y a deux </span><strong><span>modes</span></strong><span> :</span></p><ul>
+<li><span>plot: static view</span></li>
+<li><span>view: interactive mode</span></li>
+</ul><p><span>on peut sauver ses cartes dans un objets</span></p><p><span>fonction </span><code>tm_</code><span> &lt;- construire la carte, changer les paramètres sur les différentes couches et objets</span></p><p><span>fonction </span><code>tmap_</code><span> &lt;- aspect global portant sur le document save map, export, change modes</span></p><p><span>tmap_save prend une extension dans son filename qui détermine le type de fichier sauvé</span></p><h2 id="Sciences-reproductibles-et-analyse-spatiale---M-Guérois" data-id="Sciences-reproductibles-et-analyse-spatiale---M-Guérois"><a class="anchor hidden-xs" href="#Sciences-reproductibles-et-analyse-spatiale---M-Guérois" title="Sciences-reproductibles-et-analyse-spatiale---M-Guérois"><span class="octicon octicon-link"></span></a><span>Sciences reproductibles et analyse spatiale - M. Guérois</span></h2><p><span>Synthèse sur plusieurs publications récentes sur la reproductibilité en analyse spataile, mais aussi des contreverses et erreurs -&gt; cf. </span><em><span>Brundson</span></em><span>.</span><br>
+<span>Obstacles techniques : régressions pondérées divergentes selon les outils utilisés</span>
+<span>et obstacles méthodologiques : échelle d’observation et variation des contextes.</span></p><p><span>Pionniers : </span><em><span>Openshaw</span></em></p><p><span>Enquete sur les pratiques (</span><em><span>Konkol et al</span></em><span>): la moitié des enquetés ne mettent pas forcement à dispo le code et les données, mais seulement la méthodologie.</span></p><p><strong><span>Particularités de la reproductibilité en analyse spatiale</span></strong></p><ul>
+<li><span>existence de particularités liés aux SHS cf. Cura et al. (type de données, collecte, intérêt pour le raisonnement plus que sur la mesure)</span></li>
+<li><span>incertitudes liées à la nature de l’info. géographique (difficulté intrinsèque : pas d’échelle fixe d’observation ou bien le périmètre d’étude)</span></li>
+<li><span>ce n’est pas la reproductibilité des résultats qui est recherchée à tous prix, comme in sciences dures, à cause du principe fondamental de l’analyse géo à savoir </span><em><span>l’hétérogénéité géographique</span></em><span>. D’ou limites aux objections de généralisation, recherche de motifs, de lois, qui s’opposent au principe de reproductibilité à l’identique.</span></li>
+<li><span>Statut ambigu de la recherche de reproductibilité en analyse spatiale. Cf . dév autour de la Regression géographique pondérée</span></li>
+</ul><p><span>-&gt; Une synthèse possible est prorposée par Kedron &amp; al. qui fait le lien entre recherche de repro. et démarches méthodo. de l’analyse spatiale. Hyp : à chacune de ces étapes (liées à la déf. de l’incertitude), on peut trouver des obstables à cette recherche de reproductibilité</span></p><p><strong><span>Enjeux de la reproductibilité en analyse spatiale</span></strong></p><p><span>Ces enjeux sont liés à des incertitudes conceptuelles et méthologiques</span></p><ul>
+<li><strong><span>Incertitudes conceptuelles</span></strong><span> : ex. de l’artificialisation, qui est un concept équivoque (perte de biodiversité et consommation d’espaces agricoles).</span></li>
+</ul><p><span>Cf. discussion de A. Ruas dans Cybergéo sur les raisons de ces diversités de mesure.</span><br>
+<a href="https://cybergeo.hypotheses.org/688" target="_blank" rel="noopener"><span>Anne Ruas : Que penser du sens donné à l’artificialisation et à la désartificialisation des sols ?</span></a></p><p><span>2 hypothèses sont avancées :</span>
+<span>(1) diversité liées aux sources des données et des dispositifs de mesures et</span>
+<span>(2) incertitude sur le concept d’artificialisation (espace artificiel) dont le sens a pu évoluer. L’origine du concept de l’artificialisation date des années 80 (nomenclature TERUTI), puis progressivement un glissement sémantique : cf. vers un intérêt croissant pour la préservation de la biodiversité (/enjeux production agricole).</span></p><p><span>Comment relier cette évolution conceptuelle avec la  chaîne de traitement informatique ?</span></p><p><span>Kedron &amp; al. (2021) insistent sur la nécessité de clarifier les concepts, de développer l’ontologie et pour renforcer le formalisme dans les chaînes méthologiques.</span></p><ul>
+<li><strong><span>Incertitudes liées aux données</span></strong><span> :</span>
+<span>cf. Projet en cours à l’UMS Riate sur les AirDNA</span></li>
+</ul><p><span>Exemple d’enjeux liés aux données en géomatique :</span></p><p><span>– accès aux sources</span></p><p><span>– diffusion de données dites “non conventionnelles” (réseaux sociaux, gps, plateformes de services, etc.)</span></p><p><span>– pauvreté des métadonnées</span></p><p><span>– problème d’échantillonage des observations (surtout pour traces)</span></p><p><span>– données manquantes dans les bases renseignées par utilisateurs</span></p><p><span>– appariement avec des données instutionnelles ou d’enquêtes pour :</span></p><p><span>— les enrichir : cf. S. Duroudier dans Mobikids, pour enrichir sémantique des traces gps</span>
+<a href="https://hal.archives-ouvertes.fr/hal-03254291" target="_blank" rel="noopener"><span>Diagnostic qualité et apurement des données de mobilité quotidienne issues de l’enquête mixte et longitudinale Mobi’Kids</span></a></p><p><span>— vérifier leur qualité: cf. à Riate, travail sur OSM vs BPE</span></p><p><span>Ex. des prétraitements réalisés sur la base AirDNA</span></p><p><span>(…)</span></p><p><span>Travailler sur les distinctions de marchés, sur les types de locations, sur les propriétaires.</span></p><p><span>La base Airdna renseigne sur les locs AirBnb (ce n’est pas la seule)</span>
+<span>Elle renseigne aussi sur les performance des annonces.</span>
+<span>On voit le lien avec l’identification de différents marchés. Difficile d’avoir des infos sur les durées de séjour ou sur les nuitées correspondant à de longues durées de location.</span>
+<span>On a des données sensible avec un cout important.</span></p><p><span>Ici reproduvtion des traitements importantes,</span>
+<span>– pour éclairer la signification de cette base.</span>
+<span>– pour fournir des données sur des réservation effective parait compliquer.</span>
+<span>Airdna c’est 2 fichiers bruts :</span></p><ol>
+<li><span>les annonces</span></li>
+<li><span>les performances mensuelles.</span>
+<span>Le travail du Riate résumer en Markdown, créer un document pour reproduire l’analyse sur les 3 communes et de diffuser ce doc pour partager l’expertise de la BD. Il est reproduit des éléments des pré-traitements des données. (base sur performance des logements est à part.)</span></li>
+<li><span>les annonces enrichies.</span>
+<span>est effectué une analyses sur les qualités et un nettoyage des données. (des problèmes d’incohérences, en taille, en prix et des prix fixe alors qu’on sait qu’ils varient, enfin imprécision spatiale car floutée à + ou - 100 m)</span></li>
+</ol><p><span>question sur l’accés aux données : ça s’achète, et c’est cher, pas de conventions possibles. On est ici sur des données privées d’entreprise.</span>
+<span>Autres enjeux, sur le markdown diffusable, question sur les données aggrégées ou randomisées ? wait &amp; see</span></p><p><span>remarque : d’où l’importance de la donnée ouverte.</span>
+<span>MG : sur Airbnb de plus en plus de données scrapées. InsideAirbnb (mais que dans les centres-villes).</span>
+<span>remarque: les données de santé ne seront jamais ouverte (au chercheur péniblement mais c’est tout)</span>
+<span>remarque : les impots sur leur BD ont crée un pont pour retrouver les déclarations airbnb</span></p><p><span>Dernier point : méthodes de traitements et seuils et comment les choisir dans cette idée ?</span></p><p><span>Projet TRADEVE. ESPON puis Guérois, Bretagnolle.</span>
+<span>=&gt; BD internationale de morpho urbaine de plus de 10 000 Habitants, pour suivre leur trajectoire. D’ou l’intéret de créer une base pour les mesurer.</span></p><p><span>Un exemple qui renvoi à l’ensemble des exemples du cercles d’incertitudes.</span></p><p><strong><span>Un enjeu de définition</span></strong><span> (concept de ville : aire fonctionnelles &gt;50 000 , agglomération morphologique UMZ) des bases ‘bottom up’ souvent limitées car de chacuns des pays dépend.</span>
+<span>Définition agglo qui est suffisante.</span></p><p><strong><span>Un enjeu d’harmonisation dans le temps du MAUP</span></strong></p><p><span>MAUP : problème des unités spatiales modifiables</span>
+<span>(instabilité des résultats statistiques)</span></p><p><span>Quelle continuités dans le temps ? quelles limites fixe ? =&gt; 4 modèles théoriques.</span></p><p><span>Dans Tradev : limites évolutives : on part des limites actuelles et à partir d’un certain nombre de règles on rétropole</span></p><p><span>Référence travail de définition et d’harmonisation sur la délimitation de périmètres urbains, réalisé par Marion Maisonobe, laurent Jégou, Denis Eckert dans Revue M@ppemonde</span>
+<a href="http://mappemonde-archive.mgm.fr/num38/articles/art13201.html" target="_blank" rel="noopener"><span>Les villes et la science: apports de la spatialisation des données bibliométriques mondiales</span></a></p><p><span>Délimitation automatisée des zones urbaines réalisée à l’époque avec PostGIS et récupération des résultats dans R.</span></p><p><span>Divers traitements pour harmoniser les périmètres urbains.</span>
+<span>L’ensemble de cette harmonisation de la BD, a fait l’objet d’un </span><a href="https://journals.openedition.org/cybergeo/32034" target="_blank" rel="noopener"><span>datapaper</span></a><span> (périmètres et popoulation associée), mais le code n’a pas été diffusé. La BD a été déposée sur le dépôt Nakala.</span></p><p><strong><span>Enjeux d’harmonisation des bases de données dans l’espace à l’échelle européenne</span></strong></p><p><span>Questionnements sur :</span></p><ul>
+<li><span>les paramètres identiques choisis</span></li>
+<li><span>le choix des seuils fixes, comment les faire évoluer? alternatives : s’orienter vers des seuils évolutifs, relatifs : procedure de détection de noyau de densité (mais, pas totalement automatisable)</span></li>
+<li><span>le choix des simplifications : changement de la délimitation des aires urbaines en zone d’attrction, pour s’aligner sur les données de référence européenne, mais qui se fait au détriment d’un suivi dans le temps (exemple illustré par l’aire urbaine de Lyon).</span></li>
+</ul><hr><h1 id="Questions-et-ressources-générales-sur-l’utilisation-de-R" data-id="Questions-et-ressources-générales-sur-l’utilisation-de-R"><a class="anchor hidden-xs" href="#Questions-et-ressources-générales-sur-l’utilisation-de-R" title="Questions-et-ressources-générales-sur-l’utilisation-de-R"><span class="octicon octicon-link"></span></a><span>Questions et ressources générales sur l’utilisation de R</span></h1><ul>
+<li><a href="https://hpecout.gitpages.huma-num.fr/Intro_R_Rstudio_FR/#/" target="_blank" rel="noopener"><span>Introduction à RStudio (Hughes P.)</span></a></li>
+<li><a href="https://r-spatial.org/" target="_blank" rel="noopener"><span>r-spatial</span></a></li>
+</ul><h2 id="Demander-de-l’aide-ou-du-support" data-id="Demander-de-l’aide-ou-du-support"><a class="anchor hidden-xs" href="#Demander-de-l’aide-ou-du-support" title="Demander-de-l’aide-ou-du-support"><span class="octicon octicon-link"></span></a><span>Demander de l’aide ou du support</span></h2><p><a href="https://stackoverflow.com/questions/tagged/r" target="_blank" rel="noopener"><span>Stackoverflow</span></a></p><p><a href="https://gis.stackexchange.com/questions/tagged/r" target="_blank" rel="noopener"><span>gis.stackexchange</span></a></p><p><a href="https://community.rstudio.com/" target="_blank" rel="noopener"><span>Community Rstudio</span></a></p><p><a href="https://stat.ethz.ch/mailman/listinfo/r-sig-geo" target="_blank" rel="noopener"><span>stat.ethz</span></a></p><h2 id="Journal" data-id="Journal"><a class="anchor hidden-xs" href="#Journal" title="Journal"><span class="octicon octicon-link"></span></a><span>Journal</span></h2><p><span>Documenter son travail en continu dans un Journal, exemple de </span><a href="https://orgmode.org/fr/index.html" target="_blank" rel="noopener"><span>orgmode</span></a><span> utilisé par Arnaud L. compatible tous langages y compris R.</span></p><h2 id="Utiliser-des-programmes-et-pkgs-R-anciens" data-id="Utiliser-des-programmes-et-pkgs-R-anciens"><a class="anchor hidden-xs" href="#Utiliser-des-programmes-et-pkgs-R-anciens" title="Utiliser-des-programmes-et-pkgs-R-anciens"><span class="octicon octicon-link"></span></a><span>Utiliser des programmes et pkgs R anciens</span></h2><p><span>shameless plug (@rgeomatic) : </span><a href="" target="_blank" rel="noopener"><span>spectre reproductibilite</span></a></p><p><span>– </span><strong><code>sessionInfo()</code></strong><span>: permet de déclarer le système utilisé à la fin du prg ou du .rmd</span></p><p><span>– </span><strong><a href="https://cran.r-project.org/web/packages/miniCRAN/index.html" target="_blank" rel="noopener"><code>miniCRAN</code></a></strong><span> : permet de faire un snapshot du CRAN et de lancer des programmes et pkgs anciens (et non de se connecter sur le CRAN courant, actualisé).</span></p><p><span>– </span><strong><a href="https://rstudio.github.io/renv/articles/renv.html" target="_blank" rel="noopener"><code>renv</code></a></strong><span> : package pour gérer les dépendances (et leurs versions) des packages dans les projets RStudio (pas les versions de R).</span></p><p><span>– </span><strong><a href="https://jsta.github.io/r-docker-tutorial/" target="_blank" rel="noopener"><span>Docker</span></a></strong><span> : installer un Docker qui va conteuriser (outils, traitements, construction d’images) et éviter de travailler en local. D’ou permet de contourner les pb de dépendance des logiciels, de faire des mises à jour en permanence.</span></p><p><span>Il faut configurer les images docker de manière très fine, très explicite, sinon on travaille par défaut sur les dernières versions des logiciels.</span>
+<span>Docker est initialement conçu pour le </span><a href="https://fr.wikipedia.org/wiki/Devops" target="_blank" rel="noopener"><span>DevOps</span></a><span> pas pour la recherche reproductible.</span></p><p><span>-&gt; </span><strong><span>Bonne pratique</span></strong><span> : éviter au maximum les extensions de R (packages) alors que les fonctions de base de R permettent de faire beaucoup de choses et qu’un soin particulier est porté à la stabilité du code par la R Core Team.</span></p><p><span>On parle de </span><strong><span>reproductibilité</span></strong><span> (facile lorsque le traitementt peut être modélisé par une équation) et jusqu’à la </span><strong><span>réversibilité</span></strong><span> : on passe d’un état A à un état B et inversement. Plusieurs exemples de discussions et travaux sur le sujet général des Transformations cartographiques.</span></p><p><span>Question de la </span><strong><span>pérenité des outils</span></strong><span> et de la </span><strong><span>multiplicité</span></strong><span> des outils (lequel choisir ?). La question des outils  perturbe la reprodutibilité globale (ce qui n’est pas le cas du corpus  méthodologique).</span></p><p><span>Question aussi de </span><strong><span>l’archivage</span></strong><span> des programmes anciens (cf. travaux de Openshaw, de Tobler etc.), mais qui nécessite le maintien de compétences.</span></p><p><span>Question aussi de la </span><strong><span>reproductibilité opérationnelle</span></strong><span> :  des ressources humaines et de la permanence des gens sur des postes qui permet de conserver la mémoire sur le fonctionnement des outils.</span></p><p><img src="https://imgs.xkcd.com/comics/standards.png" alt="xkcd" loading="lazy"></p><p><strong><a href="https://mybinder.org/" target="_blank" rel="noopener"><span>Binder</span></a></strong><span> permet de faire… </span><em><span>“Turn a Git repo into a collection of interactive notebooks”</span></em><br>
+<span>Binder permet aussi de plonger depuis un Docker dans un environnement R/Rstudio distant pour aller rejouer du code, kniter un .rmd associé à un article. Possible pour des projets avec des datasets pas trop lourds.</span>
+<span>À ce sujet, regarder l’</span><a href="https://github.com/cboettig/noise-phenomena" target="_blank" rel="noopener"><span>article exécutable de Carl Boetinger</span></a><span> évoqué très rapidement par Robin et Jakub en page 16 de leur premier exposé. Ça utilise binder et à permet de reproduire complètement son article avec son Rstudio mais directement dans son navigateur! </span><img class="emoji" alt=":smiley:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/smiley.png"><span> Click the </span><a href="http://beta.mybinder.org/v2/gh/cboettig/noise-phenomena/master?urlpath=rstudio" target="_blank" rel="noopener"><img src="http://mybinder.org/badge.svg" alt="Binder" loading="lazy"></a><span> button above to explore in an interactive RStudio session.</span></p><p><strong><a href="https://fr.wikipedia.org/wiki/Interface_de_programmation" target="_blank" rel="noopener"><span>API</span></a></strong><span>: interface de programmation d’application. Permet d’interagir avec un systeme info, par exemple obtenir une donnée. Dans le monde d’OSM: </span><a href="https://wiki.openstreetmap.org/wiki/Overpass_API" target="_blank" rel="noopener"><span>overpass API</span></a></p><h2 id="Le-pipe-R--gt" data-id="Le-pipe-R--gt"><a class="anchor hidden-xs" href="#Le-pipe-R--gt" title="Le-pipe-R--gt"><span class="octicon octicon-link"></span></a><span>Le </span><strong><span>pipe R : %&gt;%</span></strong></h2><p><span>Le %&gt;% est un </span><em><span>sucre syntaxique</span></em><span> fournit par </span><code>{magrittr}</code><span> pour rendre le code plus joli (éviter des codes trop longs), ne change pas le fond du programme.</span></p><p><span>Proposé aujourd’hui par R base, le </span><code>%&gt;%</code><span> est remplacé par celui-ci : </span><code>|&gt;</code></p><p><span>Dans Rstudio pour faire </span><code>%&gt;%</code><span> Ctrl+Maj+m en raccourci clavier</span></p><h2 id="Retrouver-le-dépôt-Github-associé-à-un-html" data-id="Retrouver-le-dépôt-Github-associé-à-un-html"><a class="anchor hidden-xs" href="#Retrouver-le-dépôt-Github-associé-à-un-html" title="Retrouver-le-dépôt-Github-associé-à-un-html"><span class="octicon octicon-link"></span></a><span>Retrouver le dépôt Github associé à un html</span></h2><p><span>Lien vers le Rmd en html : </span><a href="https://sigr2021.github.io/gwr/" target="_blank" rel="noopener"><span>https://sigr2021.github.io/gwr/</span></a></p><p><span>Lien équivalent vers le dépôt Github : </span><a href="https://github.com/sigr2021/GWR" target="_blank" rel="noopener"><span>https://github.com/sigr2021/GWR</span></a></p><h2 id="Projet-Rzine" data-id="Projet-Rzine"><a class="anchor hidden-xs" href="#Projet-Rzine" title="Projet-Rzine"><span class="octicon octicon-link"></span></a><a href="https://rzine.fr/" target="_blank" rel="noopener"><span>Projet Rzine</span></a></h2><p><span>Hughes présente le projet développé au sein de FR CIST. Partage de docs sur R dans les SHS et promouvoir la programmation lettrée et l’utilisation des logiciels de versionnement décentralisé</span></p><p><strong><span>2 axes :</span></strong></p><ul>
+<li><span>dépôt de ressources (actuellement déjà plus de 300 !)</span></li>
+<li><span>dépôt de Fiches Rzine (.rmd avec comité de lecture)</span></li>
+</ul><h3 id="Ressources1" data-id="Ressources"><a class="anchor hidden-xs" href="#Ressources1" title="Ressources1"><span class="octicon octicon-link"></span></a><span>Ressources</span></h3><p><span>– développement d’un plateforme collaborative </span><a href="https://rzine.fr/" target="_blank" rel="noopener"><span>Projet Rzine</span></a><span> qui référence près de 300 ressources</span></p><p><span>– Actualités de la communauté de R en SHS</span></p><p><span>– Projets en lien avec la pratique de R en SHS</span></p><p><span>– Référence aussi les auteurs qui produisent des doc, des prgs</span></p><p><span>Tous ces contenus sont ouverts et tout le monde peut proposer l’ajout de contenus sur le site.</span></p><p><span>Rzine est produit avec R {Blockdown} utilisant le site statique Hugo (donc sans BDD derriere). Chaque ressource se formalise par un .rmd qui contient les métadonnées de l’information à rajouter.</span>
+<span>code et fichiers sont stockés sur le Gitlab de Humanum.</span>
+<span>On peut proposer une pull-request pour actualiser</span>
+<span>3 maintainers (Timothée G., Hugues P. et Sébastien R.)</span></p><p><a href="http://Rzine.fr" target="_blank" rel="noopener"><span>Rzine.fr</span></a><span> appartient au CNRS. Le site est distribué par une université publique, construction collective souhaitée.</span></p><h3 id="Publications---Fiche-Rzine" data-id="Publications---Fiche-Rzine"><a class="anchor hidden-xs" href="#Publications---Fiche-Rzine" title="Publications---Fiche-Rzine"><span class="octicon octicon-link"></span></a><span>Publications - Fiche Rzine</span></h3><p><span>Soumises à comité de lecture, avec DOI.</span>
+<span>Un seul format = une Fiche = un rmd. en sortie .html didactique présentant un certain type de données, et un exemple complètement reproductible. Plutôt en français (anglais accepté). En cours de mise en place. Seuls trois exemples (non formalisés) sont actuellement disponibles</span></p><p><span>Relectures / revieuw sont prévues sur git, avec une totale transparence sur la review entre auteurs et relecteurs.</span></p><p><span>Et il y a même des stickers !</span></p><hr><h1 id="Jeudi-1-juillet" data-id="Jeudi-1-juillet"><a class="anchor hidden-xs" href="#Jeudi-1-juillet" title="Jeudi-1-juillet"><span class="octicon octicon-link"></span></a><span>Jeudi 1 juillet</span></h1><h2 id="Thierry-Feuillet--Atelier-analyse-spatiale-GWR" data-id="Thierry-Feuillet--Atelier-analyse-spatiale-GWR"><a class="anchor hidden-xs" href="#Thierry-Feuillet--Atelier-analyse-spatiale-GWR" title="Thierry-Feuillet--Atelier-analyse-spatiale-GWR"><span class="octicon octicon-link"></span></a><span>Thierry Feuillet : Atelier analyse spatiale (GWR)</span></h2><p><em><span>Geographical weight regression</span></em><span> (GWR)/Régression géographique pondérée</span></p><p><strong><span>Dépendance spatiale</span></strong><span> : </span><em><strong><span>corrélation spatiale</span></strong></em><span>, cad le fait que les choses qui sont proches interagissent davantage entre elles qu’avec celles qui sont éloignées.</span></p><p><strong><span>Indépendance spatiale</span></strong><span> : les choses et leurs relations entre elles varient dans l’espace (moyennes, variances, cov)</span></p><p><span>La </span><em><strong><span>non stationnarité spatiale</span></strong></em><span> (ou hétérogénéïté spatiale de la relation statstique) est cette variation de ces paramètres dans l’espace</span></p><p><span>Cette non stationnarité est vérifiable dans différents domaines : dans le domaine de lasanté, en connue (lien entre prix de vente de l’immobilier et la surface des logements).</span></p><p><span>Ne pas considérer cette hétérogénéïté spatiale conduit à des erreurs d’interprétations importantes. Une des méthodes proposée par l’analyse spatiale pour étudier cette hétérogénéïté est la </span><em><span>Geographical weight regression</span></em><span> (GWR).</span></p><p><span>EXOS : 4 étapes</span>
+<span>Voir </span><a href="https://sigr2021.github.io/gwr/" target="_blank" rel="noopener"><span>https://sigr2021.github.io/gwr/</span></a></p><h3 id="Etape-1-Modélisation" data-id="Etape-1-Modélisation"><a class="anchor hidden-xs" href="#Etape-1-Modélisation" title="Etape-1-Modélisation"><span class="octicon octicon-link"></span></a><span>Etape 1. Modélisation</span></h3><p><span>Privilégier un  modèle log-log (plutôt que log-lin ou lin-log) car les paramètres sont plus faciles à interpréter : on regarde l’effet de l’aug du % en X sur l’effet de l’aug du % en Y</span></p><p><span>Modèle de regression linéaire log-log : est un modèle global (MCO), avec moyenne, sur tout l’espace</span>
+<span>-&gt; MCO, fonction lm (data quanti continu) sinon fonction glm (quali)</span></p><p><em><span>Détails</span></em></p><ul>
+<li>
+<p><span>faire un summary(mco) des estimation pour résumer</span></p>
+</li>
+<li>
+<p><span>(toujours) vérifier l’indépendance des variables explicatives avec un vif, mais ici, passant par {car}</span></p>
+</li>
+</ul><pre><code>library(car)
+vif(mco)
+</code></pre><p><em><span>Interprétation des résultats bruts du modèle</span></em></p><p><strong><span>Beta</span></strong><span> : coeff de regression qui caractérise la relation entre Y à expliquer et les variables explicatives. Si negatif, la relation - interprétée en % - est négative.</span></p><p><strong><span>95%</span></strong><span> : intervalle de confiance de l’estimation. Si pas de zéro, alors les relations sont significatives et ici, elles le sont à un niveau élevé</span></p><p><strong><span>intercept</span></strong><span> : valeur “moyenne” de Y lorsque toutes les variables sont égales à zéro. Si on standardise (ce qui est mieux), alors on interprète les val. moyennes de Y AINSI QUE les moyennes des différentes X Cf. Y=aX+b</span></p><h3 id="Etape-2-analyse-des-résidus" data-id="Etape-2-analyse-des-résidus"><a class="anchor hidden-xs" href="#Etape-2-analyse-des-résidus" title="Etape-2-analyse-des-résidus"><span class="octicon octicon-link"></span></a><span>Etape 2. analyse des résidus</span></h3><p><span>Observer la distribution des résidus pour savoir si le modèle est bon ou non : on entre à ce stade dans “l’analyse spatiale” pour savoir si le modèle</span>
+<span>#surestime ou sous-estime les prix.</span></p><h3 id="Etape-3-Modèle-GWR" data-id="Etape-3-Modèle-GWR"><a class="anchor hidden-xs" href="#Etape-3-Modèle-GWR" title="Etape-3-Modèle-GWR"><span class="octicon octicon-link"></span></a><span>Etape 3. Modèle GWR</span></h3><p><span>Permet de passer au niveau local en estimant un coefficient par maison, sur la base des maisons voisines et non un coeff. global, sur l’ensemble de la zone d’étude.</span></p><p><code>{GWmodel}</code><span> qu’on utilise ici n’est pas compatible avec sf, donc on sort de {sf} pour retourner sur {sp} - supprime donc la geom associée.</span></p><p><strong><span>Construire une matrice de distances</span></strong>
+<span>Distance continue en mètres cf. exemple donné.</span>
+<span>Matrices de proximité binaire (1,0) ou ordinale (1,2,3,…k) cf. nombre de limites de zone sà franchir pour aller d’un point A à B fonctionnent aussi.</span></p><p><strong><span>Comparaison de deux fonctions de pondérations spatiales</span></strong><span> : exponentielle et racine carrée</span></p><p><em><span>2 paramètres fondamentaux à calibrer</span></em></p><ul>
+<li><span>bw : définit la fenêtre de voisinage</span></li>
+<li><span>adaptive : définit le paradigme continu (ex. distance kilométrique) ou discret (ex. voisinage, plus proche voisin).</span>
+<span>Donc si adaptive=TRUE, on est dans le voisinage et il faut définir le bw en termes de nombre de voisins (ex=10)</span></li>
+</ul><blockquote>
+<p><span>on teste deux pondérations ici car on cherche à minimiser l’AICC, cad à optimiser le voisinage, en fonction du type de fonction</span></p>
+</blockquote><ul>
+<li><span>nNeigh.exp : pour estimer le nombre maximal de voisins</span></li>
+</ul><p><em><span>(1) Exponential</span></em></p><pre><code>  nNeigh.exp &lt;- bw.gwr(data = dataSp, approach = "AICc",
+                       kernel = "exponential", #fonction exponentielle
+                       adaptive = TRUE, #voisinage
+                       dMat = matDist, #a pu être calculée ailleurs (ex. CKij)
+                       formula = log_valeur_fonciere ~ log_dist_litt + log_surface_reelle_bati + log_surface_terrain)
+</code></pre><p><em><span>(2) Bisquare</span></em></p><pre><code>nNeigh.bisq &lt;- bw.gwr(data = dataSp, approach = "AICc", 
+                      kernel = "bisquare", 
+                      adaptive = TRUE, 
+                      dMat = matDist, 
+                      formula = log_valeur_fonciere ~ log_dist_litt + log_surface_reelle_bati + log_surface_terrain)
+</code></pre><h3 id="Etape-3---Etape-de-cartographie" data-id="Etape-3---Etape-de-cartographie"><a class="anchor hidden-xs" href="#Etape-3---Etape-de-cartographie" title="Etape-3---Etape-de-cartographie"><span class="octicon octicon-link"></span></a><span>Etape 3 - Etape de cartographie</span></h3><p><span>Thierry F. a créé une fonction de cartographie pour geoviz les résultats</span></p><p><strong><em><span>Fonction mapGWR</span></em></strong></p><pre><code>mapGWR &lt;- function(spdf,var,var_TV,legend.title = "betas GWR",main.title, dot.size = 0.3) {
+    tv &lt;- spdf[abs(var_TV)&gt;1.96,]
+  tm_shape(spdf) +
+    tm_dots(var, title = legend.title, size = dot.size) +
+    tm_shape(oleron) + tm_lines() +
+    tm_shape(tv) + tm_dots(col="grey40") +
+    tm_layout(title = main.title, legend.title.size =0.9, inner.margins = .15) 
+}
+</code></pre><p><span>avec:</span></p><ul>
+<li><span>t value :coeff. de regression divisé par l’écart-type</span></li>
+</ul><p><strong><span>Objectif</span></strong><span> : on veut cartographier à la fois les coeff et les tv associées, pour un seuil alpha donné, typique 5% (cf. t. de Student)</span></p><p><span>On réalise enfin une planche contenant les X cartes associées aux 3 variables explicatives.</span></p><p><span>Les valeurs de la légende sont en log, donc difficilement lisibles / interprétables : ne pas oublier de les transformer (exp) pour que la carte puisse être lisible et facilement commentée.</span></p><p><span>On applique la même fonction aux 3 planches et on plot le tout avec tmap (mode plot)</span></p><pre><code>tmap_mode("plot")
+a &lt;- mapGWR(GWR.exp$SDF, var = "log_dist_litt",var_TV = GWR.exp$SDF$log_dist_litt_TV,
+            main.title = "Distance au littoral")
+b &lt;- mapGWR(GWR.exp$SDF, var = "log_surface_reelle_bati",var_TV = GWR.exp$SDF$log_surface_reelle_bati_TV,
+            main.title = "Surface bâtie")
+c &lt;- mapGWR(GWR.exp$SDF, var = "log_surface_terrain",var_TV = GWR.exp$SDF$log_surface_terrain_TV,
+            main.title = "Surface terrain")
+
+tmap_arrange(a,b,c)
+</code></pre><p><em><span>Interprétation des cartes</span></em></p><p><span>On regarde les points situés au centre, pour chacune des X : pour surface bâtie, c’est positif partout, donc c’est signif’ partout, alors que pour la surface terrain, il existe des zones homogènes, mais aussi des zones non signif, au nord ; pour distance au littoral : peu signif’ à certains endroits etc.</span></p><h3 id="Etape-4-Régionalisation" data-id="Etape-4-Régionalisation"><a class="anchor hidden-xs" href="#Etape-4-Régionalisation" title="Etape-4-Régionalisation"><span class="octicon octicon-link"></span></a><span>Etape 4. Régionalisation</span></h3><p><strong><span>Régionalisation</span></strong><span> : recherche de zones homogènes (cf. Marianne G.) avec une contrainte spatiale de proximité. Conduit à une partition du territoire.</span></p><p><span>On utilise les valeurs des GWR pour réaliser cette typologie, en faisant l’hypo. qu’il existe des sous-marchés immobiliers (cf. Renaud l. G.)</span></p><p><span>On applique la méthode SKATER (cf. doc de l’INSEE)… jusqu’aux résidus.</span></p><p><span>*Pour la visualisation et l’interprétation *:</span></p><p><span>– cartographier les clusters de points, en trois planches (idem précédent)</span></p><p><span>– ET représenter les écarts aux profils moyens pour les trois paramètres.</span></p><p><span>retirer la fonction </span><code>add_vif</code><span> et le pipe qui le précéde dans le chunck Modèle log-log global (MCO)</span></p><p><strong><span>La Gwr c’est faire une régression linéaire par individu</span></strong></p><p><span>On retransforme notre objet sf en sp puis on crée notre matrice de distance.</span>
+<span>Une fois qu’on a la matrice il faut calibrer l’espace du voisinage.</span></p><p><span>Estimation de la gwr : on calibre: bw on définitit la distance et adaptive (true = nb voisin, false = distance)</span>
+<span>on utilise nb voisin car les maisons réparties de manière hétérogènes, le risque il peut ne pas y avoir assez d’individus dans le voisinage local, ici on s’assure qu’il y a assez de voisins plutot que distance ou risque de pas en avoir ou très éloignée</span></p><p><span>on va essayer 2 types de de comparaison = minimiser l’AIC avec 2 types de comparaison une fonction gaussienne ou expo et une fonction bicarrée ou boxcar.</span></p><p><span>question : peut on prendre un maillage et construire une matrice ordinale, par exemple, en dénombrant le nombre de limites de zones à franchir ? -&gt; Oui (matrices binaires et ordinales fonctionnent aussi)</span>
+<span>=&gt; il faut préparer ces matrices de distance jointure avant.</span></p><p><span>T Value est l’inverse proportionnel à la P value</span>
+<span>Si t Value très basse permet de voir ou il faut faire attention aux coefficients. le seuil  est de 1,96</span></p><h2 id="Malika-Madelin--Analyse-d’images-Raster-et-télédetection" data-id="Malika-Madelin--Analyse-d’images-Raster-et-télédetection"><a class="anchor hidden-xs" href="#Malika-Madelin--Analyse-d’images-Raster-et-télédetection" title="Malika-Madelin--Analyse-d’images-Raster-et-télédetection"><span class="octicon octicon-link"></span></a><span>Malika Madelin : Analyse d’images Raster et télédetection</span></h2><p><span>presentation de diverses sources d’images</span>
+<span>SENTINEL, SRTM, NDVI, MNE,LANDSAT, Corine Land Cover etc.</span></p><p><span>JRC Pop2018 : maille pour la population</span>
+<span>VIIRS Image de luminosité nocturne ?</span></p><p><span>Données satellitaires : on définit des résolutions spatiales, spectrales et temporelles</span>
+<span>un meme satellite peut avoir plusieurs capteurs, comme Landsat.</span></p><p><span>Lors d’un export d’images, il est important de connaitre le datatype pour gérer le poids des images.</span></p><p><span>Une image sentinelle = 1GB</span></p><p><span>Production massive et quotidienne de données</span></p><p><span>Les produits sont forunies à différents niveaux de traitements (brutes, corrections atmosphèriques, reliefs).</span></p><p><span>Données souvent accessible via des plateformes (Earth Explorer, Sentinel Hub, GEE). Certaines permettent de faire du calcul sur leurs plateformes.</span></p><p><span>Copernicus Research and User Support (RUS) :</span>
+<a href="https://rus-copernicus.eu/portal/" target="_blank" rel="noopener"><span>https://rus-copernicus.eu/portal/</span></a></p><p><span>On peut aussi choisir la compression en plus du type de données pour economiser du volume.</span></p><p><span>Formats d’image qui permettent d’avoir des images moins lourds (rapport de 1 à 3 entre ASCII et geopkg)</span></p><h3 id="Sous-R-3-packages-“phares”" data-id="Sous-R-3-packages-“phares”"><a class="anchor hidden-xs" href="#Sous-R-3-packages-“phares”" title="Sous-R-3-packages-“phares”"><span class="octicon octicon-link"></span></a><span>Sous R 3 packages “phares”</span></h3><ul>
+<li><span>{raster} : le plus ancien. Possible de faire de la parallélisation.</span></li>
+<li><span>{stars] : dimension multiscalaire ET multi-dimentionnelle (datacubes) pour gérer des données types NetCDF. Fonctionne aussi pour données vecteur. Permet de gérer des rasters lourds</span></li>
+<li><span>{terra] : plus perfomant que {raster}</span></li>
+</ul><p><strong><span>Lire les fichiers raster dans R :</span></strong></p><ul>
+<li><span>Avec le package raster :</span>
+<ul>
+<li><span>type image : </span><strong><span>Rasterlayer</span></strong><span> : l’image n’est pas chargée en mémoire dans R, ne pas hésiter à enregistrer le fichier temporaire (par exemple, en Tiff) et le recharger ensuite.</span></li>
+</ul>
+</li>
+<li><span>Avec le package terra :</span>
+<span>il donne plus d’infos sur l’image et chargemnt bcp moins lourd</span></li>
+<li><span>Avec le package star :</span>
+<ul>
+<li><span>stars object</span></li>
+</ul>
+</li>
+</ul><p><span>type de données dans terra: </span><a href="https://rspatial.github.io/terra/reference/writeRaster.html" target="_blank" rel="noopener"><span>https://rspatial.github.io/terra/reference/writeRaster.html</span></a></p><p><a href="https://www.rncan.gc.ca/cartes-outils-publications/imagerie-satellitaire-photos-aer/imagerie-satellitaire-produits/ressources-educatives/9272" target="_blank" rel="noopener"><span>Centre canadien de Teledétection</span></a><span> pour s’initier à la teledection.</span></p><p><strong><span>Opérations réalisables</span></strong></p><p><em><strong><span>Methodes de reprojection</span></strong></em><span> : bien choisir entre la méthode : plus proche voisin ou bilinéaire qui entraîne une modification des valeurs (par exemple, par un moyennage avec les pixels voisins), et donc à utiliser en adéquation avec le type de données (donc pas pour des catégorielles).</span></p><p><span>st_transform</span></p><p><em><strong><span>Découpages</span></strong></em><span> : crop &amp; mask</span></p><p><span>Le </span><em><span>crop</span></em><span> découpe l’image</span></p><p><span>Le </span><em><span>mask</span></em><span> conserve l’étendue de l’image initiale</span></p><p><em><strong><span>Agrégation / désagrégation</span></strong></em></p><p><span>Possibles selon fonctions moyennes, max. etc.</span></p><p><span>Les gens utilisent cette proc d’agrégation en changeant la résolution pour voir ce que cela donne visuellement de comparer un produit sur 30m et sur 300 mètres. Pas très convaincue par cette méthode.</span></p><p><em><strong><span>Fusion / merge et mosaïque</span></strong></em></p><p><span>merge créé un raster, alors que mosaïque créée un objet virtuel</span></p><p><strong><span>Opérations</span></strong><span> :</span></p><p><span>3 types d’opérations sont possibles : locales, focales et zonales, correspondent à un schéma de pensée.</span></p><p><em><strong><span>Opérations locales</span></strong></em><span> : on regarde pixel à pixel</span></p><p><em><span>Reclassifications</span></em></p><p><span>Création de masques raster (1/0) : de la lecture des valeurs spectrales à une typologie binaire (avec une classe à zéro où on pourra enlever les valeurs)</span></p><p><span>Gestion des NA -_9999</span></p><p><strong><span>Calcul matriciel / calculatrice raster</span></strong></p><p><span>On peut aussi calculer des </span><em><span>NDVI</span></em></p><p><img class="emoji" alt=":warning:" src="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/images/basic/warning.png"><span> mise en garde  valeur en fonction du min et max et pas en fonction du signal donc le NDVI ne sera pas normalisé mais dépendant de sa couche d’entrée. Lire alors attentivemnt la métadonnée associée.</span></p><p><span>avec Terra terra::calc de la doc pour définir le calculateur matriciel le plus rapide.</span></p><p><span>on peut aussi comparer 2 raster, voir des corrélations usw…</span></p><p><strong><span>opérations focales</span></strong></p><p><span>on regarde plus uniquement le pixel mais ce qui se passe autour</span></p><p><em><strong><span>filtres</span></strong></em></p><p><em><strong><span>opérations zonales ou globales</span></strong></em></p><p><span>Au niveau du raster entier ou d’une sous-zone, par ex. surface occupée par chacune des classes.</span></p><p><span>avec class(r_zoom)</span></p><p><span>Calcul de statistiques locales</span></p><p><span>possibilités de caler les données gps.</span></p><p><strong><span>Traitement des images satellites</span></strong></p><p><span>Objectifs :</span></p><ul>
+<li>
+<p><span>amélioration pour aider à l’interprétation (jouer sur seuillages, compo. colorée etc.)</span></p>
+</li>
+<li>
+<p><span>traitements physiques (températures de surface à caluler en fonction des contextes)</span></p>
+</li>
+<li>
+<p><span>réalisation de zonages: élément central, réalisation de classifications, typologies du territoire.</span></p>
+</li>
+</ul><p><strong><span>(1) Approche dite par pixel</span></strong><span>: on regarde les pixels en tant que tel (valeurs radiométriques ex. ACP sur les valeurs de surfaces réalisées sur un ensemble de canaux des valeurs sentinel) + classifications types CAH (on coupe le dendro etc.), segmentations.</span></p><p><span>On utilise de plus en plus les k-means mais on va définir d’office le nombre de classes en amont</span></p><p><strong><span>(2) Approche focale :</span></strong><span> on regarde le pixel par rapport à ses voisins : détection de contours, etc.</span></p><p><strong><span>(3) Approches O-O :</span></strong><span> on définit des zones qui correspondent à des classifications supervisées (on connait le terrain car on a déjà une photo interpréation de son image… et on veut rechercher les secteurs aux valeurs qui sont proches de ce que l’on connaît : cf. permet de définir des “</span><em><span>local climate zone</span></em><span>” dans des villes) Mais cela pose d’autres questions, car a été développé pour des villes europénnes donc effets de contexte. Quelques tetatives dans quelques villes du sud.</span></p><p><span>Classif. non supervisées (réalisées avant d’aller sur terrains)</span></p><p><strong><span>(4) Cartographie et visualisation</span></strong>
+<span>Pas génial dans R au niveau des couleurs</span></p><p><code>{raster} </code><span>avec </span><code>plot()</code></p><p><code>{stars}</code><span> gère bien les rasters lourds car il y a un tuilage en amont</span></p><p><code>{sp}</code><span> avec </span><code>spplot()</code></p><p><code>{rasterVis}</code><span> avec </span><code>levelplot()</code><span> intéressant car fournit l’hist. par défaut. Gère bien les vignettes, pratique pour données temporelles</span></p><p><code>{leaflet}</code><span> en mode vectoriel est adoré, mais très moyen en raster car gère mal les projections</span></p><p><code>{tmap}</code><span> avec </span><code>tm_raster()</code></p><p><code>{rayshader}</code></p><p><code>{mapview}</code></p><p><a href="https://www.netatmo.com/en-us" target="_blank" rel="noopener"><span>Netatmo</span></a><span> : surveillance de nounou et temperature</span></p><h2 id="Timothée-G--mapsf" data-id="Timothée-G--mapsf"><a class="anchor hidden-xs" href="#Timothée-G--mapsf" title="Timothée-G--mapsf"><span class="octicon octicon-link"></span></a><span>Timothée G. : mapsf</span></h2><p><span>Cerise sur le gateau, Timothée fait une présentation en 15 minutes chrono (enfin 17’) de </span><code>{mapsf}</code><span> permettant de faire de la cartographie thématique ou cartostats… et comparaison avec </span><code>{cartography}</code></p><h3 id="Contexte-de-développement" data-id="Contexte-de-développement"><a class="anchor hidden-xs" href="#Contexte-de-développement" title="Contexte-de-développement"><span class="octicon octicon-link"></span></a><span>Contexte de développement</span></h3><p><span>existe un historique des dév. depuis son 1er package </span><code>{rCarto}</code><span> retiré depuis du CRAN.</span></p><p><span>2013 : </span><code>{rCarto}</code></p><p><span>2015 :</span><code>{cartography}</code><span> dev. avec Nicolas L. pour pouvoir faire des cartes avec R.</span></p><p><span>Avaient fait une série de choix sur le choix des fct, les différentes arguments, l’ordre des arguments, la manière d’écrire les funcions.</span>
+<span>s’appuyait sur </span><code>{sp}</code><span>, </span><code>{rgdal}</code><span> et </span><code>{rgeos}</code><span>. Mais le passage à </span><code>{sf}</code><span> a bcp compliqué les choses.</span></p><p><span>2017 : maj de </span><code>{cartography}</code><span> avec </span><code>{sf}</code></p><p><span>2020 : ré-écriture complète pendant le 1er confinement, plus simple, plus léger et puls ergonomique. Résultat = </span><code>{mapsf}</code></p><p><strong><code>mf_map()</code></strong><span> : fonction principale composée de 3 arguments</span></p><p><span>– x : prend un objet </span><code>{sf}</code><span> en entrée</span></p><p><span>– var : variable à représenter</span></p><p><span>– type : type de carte à réaliser (choro, cercles prop. etc)</span></p><p><span>Voir le </span><a href="https://cran.r-project.org/web/packages/mapsf/readme/README.html" target="_blank" rel="noopener"><span>README de mapsf </span></a><span>, ou sa vignette pour les types de caractères points, lignes, polygones.</span></p><h3 id="Nouvelles-fonctionnalités-par-rapport-à-cartography" data-id="Nouvelles-fonctionnalités-par-rapport-à-cartography"><a class="anchor hidden-xs" href="#Nouvelles-fonctionnalités-par-rapport-à-cartography" title="Nouvelles-fonctionnalités-par-rapport-à-cartography"><span class="octicon octicon-link"></span></a><span>Nouvelles fonctionnalités** par rapport à </span><code>{cartography}</code></h3><p><span>(sélection)</span></p><p><em><strong><span>Habillage</span></strong></em><span> : gestion améliorée des élements de cosmétisation</span>
+<code>mf_title()</code>
+<code>mf_arrow()</code>
+<span>etc.</span></p><p><em><strong><span>Export</span></strong></em><span> (en .png ou en svg): on exporte la carte avec un ratio hauteur/largeur qui correspond par défaut à la Bbox de départ.</span></p><p><em><strong><span>Inset</span></strong></em><span> (cartouches)</span></p><p><code>mf_inset_on()</code><span> permet de faire l’inset et de définir le ratio (la taille en % inset / carte principale).</span></p><p><span>On peut également mettre une carte dans un inset</span></p><p><span>Aussi un hist. dans un inset</span></p><p><em><strong><span>Situation/localisation monde</span></strong></em></p><p><code>mf_worldmap()</code><span> place automatiquement un point à l’endroit de la zone d’étude sur une petite carte du monde.</span></p><p><em><strong><span>Thème</span></strong></em></p><p><span>Le thème est davantage paramétrable</span></p><p><span>– couple de couleurs (fond de la planche, fond du titre)</span></p><p><span>– position du titre, dedans / hors de la carte</span></p><p><span>– marges de la figure : gestion facilitée</span></p><p><span>on peut utliser un thème défini, modifier un thème  existant ou en créér un à partir de rien.</span></p><h3 id="Associés-au-package-" data-id="Associés-au-package-"><a class="anchor hidden-xs" href="#Associés-au-package-" title="Associés-au-package-"><span class="octicon octicon-link"></span></a><span>Associés au  package** :</span></h3><ul>
+<li><span>un site web réalisé avec </span><code>{packagedown}</code><span> </span><a href="https://riatelab.github.io/mapsf/" target="_blank" rel="noopener"><span>riatelab - mapsf</span></a></li>
+<li><a href="https://cran.r-project.org/web/packages/mapsf/readme/README.html" target="_blank" rel="noopener"><span>Documentation - CRAN</span></a>
+<span>compacte et succinte avec peu d’arguments par choix</span>
+<span>arguments dans mf_map() tous les arguments pas utiles pour chaque type de cartes.</span></li>
+</ul><p><strong><span>Schéma des types de cartes proposées:</span></strong>
+<img src="https://i.imgur.com/Tp1G0Vh.png" alt="" loading="lazy"></p><ul>
+<li><span>Voir aussi le Carnet Hypothèses </span><a href="https://rgeomatic.hypotheses.org/" target="_blank" rel="noopener"><span>rgeomatic</span></a><span> de Timothée (in english)</span></li>
+<li><span>Plus généralement : </span><a href="https://github.com/riatelab" target="_blank" rel="noopener"><span>Riatelab</span></a></li>
+</ul><p><a href="https://www.lizmap.com/" target="_blank" rel="noopener"><span>Lizmap</span></a><span> permet d’heberger des projets QGIS et publier. Ex chez EVS : </span><a href="https://websig.univ-st-etienne.fr/renaud/" target="_blank" rel="noopener"><span>https://websig.univ-st-etienne.fr/renaud/</span></a></p><h1 id="Vendredi-2-juillet" data-id="Vendredi-2-juillet"><a class="anchor hidden-xs" href="#Vendredi-2-juillet" title="Vendredi-2-juillet"><span class="octicon octicon-link"></span></a><span>Vendredi 2 juillet</span></h1><p><span>Dans le dev de package R il est plus sage de sauver les exemples dans des fichiers plutot que des objets R. Les fichier sont plus stables, les packages évoluent.</span></p><p><code>plot()</code><span> va diminuer la resolution des images raster pour l’afficher. il y a une limite dans le nombre max de cell (cf doc de plot).</span></p><p><span>Defaut dans le </span><code>tmap</code><span> max 10 M de cells.</span></p><p><span>Pour la reclassification il faut fournir une matrice de reclassification.</span></p><p><code>terra::lapp</code><span> -&gt; apply that on layer, proche de lapply for raster</span></p><p><span>terra est en c++:  dans zonal si on veut utiliser la fonction c++ dans zonal on utilise “mean” si on veut une fonction de R on met la fonction sans “” ex: mean.</span></p><p><span>Deux sites de la communautée :</span></p><ul>
+<li><a href="https://r-spatial.org/" target="_blank" rel="noopener"><span>https://r-spatial.org/</span></a></li>
+<li><a href="https://rspatial.org/" target="_blank" rel="noopener"><span>https://rspatial.org/</span></a></li>
+</ul><p><span>Les deux ont leurs dépots Github.</span></p><p><span>Pour réechantillonner un raster on va créer un template (vide). Il faut aussi speifier la methode en fonction du type de donnée</span>
+<span>(continue, categorique). Par defaut </span><code>resample</code><span>  prend </span><em><strong><span>“bilinear”</span></strong></em><span>. On peut changer l’argument dans la fonction (ex: </span><code>method = "near"</code><span>.)</span></p><p><span>Pour créer ses propres projections : </span><a href="https://projectionwizard.org/" target="_blank" rel="noopener"><span>https://projectionwizard.org/</span></a></p><p><span>On peut spécifier ce que l’on veut garder </span><em><span>“Equal-area”</span></em><span>, </span><em><span>“Equidistant”</span></em><span> ou </span><em><span>“compromise”</span></em><span> entre les deux autres.</span></p><p><code>crop</code><span> resert la bbox autour du vecteur.</span></p><p><code>mask</code><span> remplace les valeurs au dela du vecteur par </span><code>NA</code><span>.</span></p><p><span>Un workflow peut être:</span></p><pre class="mermaid" data-processed="true"><svg id="mermaid-1625480158212" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="152.4000244140625" style="max-width: 75.63333129882812px;" viewBox="0 0 75.63333129882812 152.4000244140625"><style>#mermaid-1625480158212{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#mermaid-1625480158212 .error-icon{fill:#552222;}#mermaid-1625480158212 .error-text{fill:#552222;stroke:#552222;}#mermaid-1625480158212 .edge-thickness-normal{stroke-width:2px;}#mermaid-1625480158212 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1625480158212 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1625480158212 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1625480158212 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1625480158212 .marker{fill:#333333;stroke:#333333;}#mermaid-1625480158212 .marker.cross{stroke:#333333;}#mermaid-1625480158212 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1625480158212 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1625480158212 .cluster-label text{fill:#333;}#mermaid-1625480158212 .cluster-label span{color:#333;}#mermaid-1625480158212 .label text,#mermaid-1625480158212 span{fill:#333;color:#333;}#mermaid-1625480158212 .node rect,#mermaid-1625480158212 .node circle,#mermaid-1625480158212 .node ellipse,#mermaid-1625480158212 .node polygon,#mermaid-1625480158212 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1625480158212 .node .label{text-align:center;}#mermaid-1625480158212 .node.clickable{cursor:pointer;}#mermaid-1625480158212 .arrowheadPath{fill:#333333;}#mermaid-1625480158212 .edgePath .path{stroke:#333333;stroke-width:1.5px;}#mermaid-1625480158212 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1625480158212 .edgeLabel{background-color:#e8e8e8;text-align:center;}#mermaid-1625480158212 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#mermaid-1625480158212 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1625480158212 .cluster text{fill:#333;}#mermaid-1625480158212 .cluster span{color:#333;}#mermaid-1625480158212 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80,100%,96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1625480158212:root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-crop LE-mask" style="opacity: 1;" id="L-crop-mask"><path class="path" d="M37.81666564941406,51.20001220703125L37.81666564941406,55.366678873697914C37.81666564941406,59.533345540364586,37.81666564941406,67.86667887369792,37.81666564941406,76.20001220703125C37.81666564941406,84.53334554036458,37.81666564941406,92.86667887369792,37.81666564941406,97.03334554036458L37.81666564941406,101.20001220703125" marker-end="url(#arrowhead64)" style="fill:none"></path><defs><marker id="arrowhead64" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-crop-mask" class="edgeLabel L-LS-crop' L-LE-mask"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" style="opacity: 1;" id="flowchart-crop-58" transform="translate(37.81666564941406,29.600006103515625)"><rect rx="0" ry="0" x="-26.26666259765625" y="-21.600006103515625" width="52.5333251953125" height="43.20001220703125" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-16.26666259765625,-11.600006103515625)"><foreignObject width="32.5333251953125" height="23.20001220703125"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">crop</div></foreignObject></g></g></g><g class="node default" style="opacity: 1;" id="flowchart-mask-59" transform="translate(37.81666564941406,122.80001831054688)"><rect rx="0" ry="0" x="-29.816665649414062" y="-21.600006103515625" width="59.633331298828125" height="43.20001220703125" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-19.816665649414062,-11.600006103515625)"><foreignObject width="39.633331298828125" height="23.20001220703125"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">mask</div></foreignObject></g></g></g></g></g></g></svg></pre><p><span>première étape permet de limiter la taille puis de mettre les valeurs en dehors en “NA”.</span></p><p><code>terra::extract</code><span> permet de sortir les valeurs en fonction d’un vecteur. La différence avec des stats zonales est que l’on retrouve toutes les valeurs et pas un agrégat.</span></p><p><a href="https://geocompr.github.io/" target="_blank" rel="noopener"><span>https://geocompr.github.io/</span></a></p><p><span>conversion entre format : </span><a href="https://geocompr.github.io/post/2021/spatial-classes-conversion/" target="_blank" rel="noopener"><span>https://geocompr.github.io/post/2021/spatial-classes-conversion/</span></a></p><p><span>points clouds :</span><a href="https://jean-romain.github.io/lidRbook/index.html" target="_blank" rel="noopener"><span>https://jean-romain.github.io/lidRbook/index.html</span></a></p></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#École-thématique-Sciences-de-l’information-géographique-reproductibles" title="École thématique Sciences de l’information géographique reproductibles">École thématique Sciences de l’information géographique reproductibles</a></li>
+<li class=""><a href="#Vos-remarques-et-suggestions" title="Vos remarques et suggestions">Vos remarques et suggestions</a></li>
+<li><a href="#Aide-pour-les-installations" title="Aide pour les installations">Aide pour les installations</a></li>
+<li><a href="#Lundi-28-Juin" title="Lundi 28 Juin">Lundi 28 Juin</a><ul class="nav">
+<li><a href="#Présentation-générale" title="Présentation générale">Présentation générale</a></li>
+<li><a href="#Séminaire-Recherche-Reproductible" title="Séminaire Recherche Reproductible">Séminaire Recherche Reproductible</a><ul class="nav">
+<li><a href="#Quelques-ressources-slides-MOOC-git-avec-des-petits-dessins-etc" title="Quelques ressources (slides, MOOC, git avec des petits dessins, etc.)">Quelques ressources (slides, MOOC, git avec des petits dessins, etc.)</a></li>
+<li><a href="#Reproducibility-Crisis-and-Open-Science-Arnaud-Legrand" title="Reproducibility Crisis and Open Science (Arnaud Legrand)">Reproducibility Crisis and Open Science (Arnaud Legrand)</a></li>
+<li><a href="#“Aspect-Humains”" title="“Aspect Humains”">“Aspect Humains”</a></li>
+</ul>
+</li>
+<li><a href="#R-Markdown" title="R Markdown">R Markdown</a><ul class="nav">
+<li><a href="#Présentation" title="Présentation">Présentation</a></li>
+<li><a href="#Faire-son-Rmarkdown" title="Faire son Rmarkdown">Faire son Rmarkdown</a></li>
+<li><a href="#Syntaxe-markdown" title="Syntaxe markdown">Syntaxe markdown</a></li>
+<li><a href="#Bonnes-pratiques-de-codes" title="Bonnes pratiques de codes">Bonnes pratiques de codes</a></li>
+<li><a href="#Fonctionnement-du-R-Markdown" title="Fonctionnement du R Markdown">Fonctionnement du R Markdown</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Mardi-29-juin" title="Mardi 29 juin">Mardi 29 juin</a><ul class="nav">
+<li><a href="#Présenter-vos-travaux-en-Markdown" title="Présenter vos travaux en Markdown">Présenter vos travaux en Markdown</a><ul class="nav">
+<li><a href="#en-tête" title="en tête">en tête</a></li>
+<li><a href="#contenu" title="contenu">contenu</a></li>
+</ul>
+</li>
+<li><a href="#intro-à-Git" title="intro à Git">intro à Git</a><ul class="nav">
+<li><a href="#Ressources" title="Ressources">Ressources</a></li>
+<li><a href="#Trivia" title="Trivia:">Trivia:</a></li>
+</ul>
+</li>
+<li><a href="#SIG-et-Cartography" title="SIG et Cartography">SIG et Cartography</a><ul class="nav">
+<li><a href="#créer-une-reprex--exemple-reproductif" title="créer une reprex : exemple reproductif">créer une reprex : exemple reproductif</a></li>
+<li><a href="#GIS-ecosystem-of-R" title="GIS ecosystem of R">GIS ecosystem of R</a></li>
+<li><a href="#R-package" title="R package">R package</a></li>
+<li><a href="#R-spatial-infrastructure" title="R spatial infrastructure">R spatial infrastructure</a></li>
+<li><a href="#pont-vers-d’autres-logiciels" title="pont vers d’autres  logiciels">pont vers d’autres  logiciels</a></li>
+<li><a href="#Mapping-ecosytem" title="Mapping ecosytem">Mapping ecosytem</a></li>
+<li><a href="#CRS" title="CRS">CRS</a></li>
+<li><a href="#Geocomputation" title="Geocomputation">Geocomputation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Mercredi-30" title="Mercredi 30">Mercredi 30</a><ul class="nav">
+<li><a href="#Comment-importer-des-données" title="Comment importer des données">Comment importer des données</a></li>
+<li><a href="#getting-started-with-tmap-package" title="getting started with tmap package">getting started with tmap package</a></li>
+<li><a href="#Sciences-reproductibles-et-analyse-spatiale---M-Guérois" title="Sciences reproductibles et analyse spatiale - M. Guérois">Sciences reproductibles et analyse spatiale - M. Guérois</a></li>
+</ul>
+</li>
+<li><a href="#Questions-et-ressources-générales-sur-l’utilisation-de-R" title="Questions et ressources générales sur l’utilisation de R">Questions et ressources générales sur l’utilisation de R</a><ul class="nav">
+<li><a href="#Demander-de-l’aide-ou-du-support" title="Demander de l’aide ou du support">Demander de l’aide ou du support</a></li>
+<li><a href="#Journal" title="Journal">Journal</a></li>
+<li><a href="#Utiliser-des-programmes-et-pkgs-R-anciens" title="Utiliser des programmes et pkgs R anciens">Utiliser des programmes et pkgs R anciens</a></li>
+<li><a href="#Le-pipe-R--gt" title="Le pipe R : %>%">Le pipe R : %&gt;%</a></li>
+<li><a href="#Retrouver-le-dépôt-Github-associé-à-un-html" title="Retrouver le dépôt Github associé à un html">Retrouver le dépôt Github associé à un html</a></li>
+<li><a href="#Projet-Rzine" title="Projet Rzine">Projet Rzine</a><ul class="nav">
+<li><a href="#Ressources1" title="Ressources">Ressources</a></li>
+<li><a href="#Publications---Fiche-Rzine" title="Publications - Fiche Rzine">Publications - Fiche Rzine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Jeudi-1-juillet" title="Jeudi 1 juillet">Jeudi 1 juillet</a><ul class="nav">
+<li><a href="#Thierry-Feuillet--Atelier-analyse-spatiale-GWR" title="Thierry Feuillet : Atelier analyse spatiale (GWR)">Thierry Feuillet : Atelier analyse spatiale (GWR)</a><ul class="nav">
+<li><a href="#Etape-1-Modélisation" title="Etape 1. Modélisation">Etape 1. Modélisation</a></li>
+<li><a href="#Etape-2-analyse-des-résidus" title="Etape 2. analyse des résidus">Etape 2. analyse des résidus</a></li>
+<li><a href="#Etape-3-Modèle-GWR" title="Etape 3. Modèle GWR">Etape 3. Modèle GWR</a></li>
+<li><a href="#Etape-3---Etape-de-cartographie" title="Etape 3 - Etape de cartographie">Etape 3 - Etape de cartographie</a></li>
+<li><a href="#Etape-4-Régionalisation" title="Etape 4. Régionalisation">Etape 4. Régionalisation</a></li>
+</ul>
+</li>
+<li><a href="#Malika-Madelin--Analyse-d’images-Raster-et-télédetection" title="Malika Madelin : Analyse d’images Raster et télédetection">Malika Madelin : Analyse d’images Raster et télédetection</a><ul class="nav">
+<li><a href="#Sous-R-3-packages-“phares”" title="Sous R 3 packages “phares”">Sous R 3 packages “phares”</a></li>
+</ul>
+</li>
+<li><a href="#Timothée-G--mapsf" title="Timothée G. : mapsf">Timothée G. : mapsf</a><ul class="nav">
+<li><a href="#Contexte-de-développement" title="Contexte de développement">Contexte de développement</a></li>
+<li><a href="#Nouvelles-fonctionnalités-par-rapport-à-cartography" title="Nouvelles fonctionnalités** par rapport à {cartography}">Nouvelles fonctionnalités** par rapport à {cartography}</a></li>
+<li><a href="#Associés-au-package-" title="Associés au  package** :">Associés au  package** :</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Vendredi-2-juillet" title="Vendredi 2 juillet">Vendredi 2 juillet</a></li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#École-thématique-Sciences-de-l’information-géographique-reproductibles" title="École thématique Sciences de l’information géographique reproductibles">École thématique Sciences de l’information géographique reproductibles</a></li>
+<li class=""><a href="#Vos-remarques-et-suggestions" title="Vos remarques et suggestions">Vos remarques et suggestions</a></li>
+<li><a href="#Aide-pour-les-installations" title="Aide pour les installations">Aide pour les installations</a></li>
+<li><a href="#Lundi-28-Juin" title="Lundi 28 Juin">Lundi 28 Juin</a><ul class="nav">
+<li><a href="#Présentation-générale" title="Présentation générale">Présentation générale</a></li>
+<li><a href="#Séminaire-Recherche-Reproductible" title="Séminaire Recherche Reproductible">Séminaire Recherche Reproductible</a><ul class="nav">
+<li><a href="#Quelques-ressources-slides-MOOC-git-avec-des-petits-dessins-etc" title="Quelques ressources (slides, MOOC, git avec des petits dessins, etc.)">Quelques ressources (slides, MOOC, git avec des petits dessins, etc.)</a></li>
+<li><a href="#Reproducibility-Crisis-and-Open-Science-Arnaud-Legrand" title="Reproducibility Crisis and Open Science (Arnaud Legrand)">Reproducibility Crisis and Open Science (Arnaud Legrand)</a></li>
+<li><a href="#“Aspect-Humains”" title="“Aspect Humains”">“Aspect Humains”</a></li>
+</ul>
+</li>
+<li><a href="#R-Markdown" title="R Markdown">R Markdown</a><ul class="nav">
+<li><a href="#Présentation" title="Présentation">Présentation</a></li>
+<li><a href="#Faire-son-Rmarkdown" title="Faire son Rmarkdown">Faire son Rmarkdown</a></li>
+<li><a href="#Syntaxe-markdown" title="Syntaxe markdown">Syntaxe markdown</a></li>
+<li><a href="#Bonnes-pratiques-de-codes" title="Bonnes pratiques de codes">Bonnes pratiques de codes</a></li>
+<li><a href="#Fonctionnement-du-R-Markdown" title="Fonctionnement du R Markdown">Fonctionnement du R Markdown</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Mardi-29-juin" title="Mardi 29 juin">Mardi 29 juin</a><ul class="nav">
+<li><a href="#Présenter-vos-travaux-en-Markdown" title="Présenter vos travaux en Markdown">Présenter vos travaux en Markdown</a><ul class="nav">
+<li><a href="#en-tête" title="en tête">en tête</a></li>
+<li><a href="#contenu" title="contenu">contenu</a></li>
+</ul>
+</li>
+<li><a href="#intro-à-Git" title="intro à Git">intro à Git</a><ul class="nav">
+<li><a href="#Ressources" title="Ressources">Ressources</a></li>
+<li><a href="#Trivia" title="Trivia:">Trivia:</a></li>
+</ul>
+</li>
+<li><a href="#SIG-et-Cartography" title="SIG et Cartography">SIG et Cartography</a><ul class="nav">
+<li><a href="#créer-une-reprex--exemple-reproductif" title="créer une reprex : exemple reproductif">créer une reprex : exemple reproductif</a></li>
+<li><a href="#GIS-ecosystem-of-R" title="GIS ecosystem of R">GIS ecosystem of R</a></li>
+<li><a href="#R-package" title="R package">R package</a></li>
+<li><a href="#R-spatial-infrastructure" title="R spatial infrastructure">R spatial infrastructure</a></li>
+<li><a href="#pont-vers-d’autres-logiciels" title="pont vers d’autres  logiciels">pont vers d’autres  logiciels</a></li>
+<li><a href="#Mapping-ecosytem" title="Mapping ecosytem">Mapping ecosytem</a></li>
+<li><a href="#CRS" title="CRS">CRS</a></li>
+<li><a href="#Geocomputation" title="Geocomputation">Geocomputation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Mercredi-30" title="Mercredi 30">Mercredi 30</a><ul class="nav">
+<li><a href="#Comment-importer-des-données" title="Comment importer des données">Comment importer des données</a></li>
+<li><a href="#getting-started-with-tmap-package" title="getting started with tmap package">getting started with tmap package</a></li>
+<li><a href="#Sciences-reproductibles-et-analyse-spatiale---M-Guérois" title="Sciences reproductibles et analyse spatiale - M. Guérois">Sciences reproductibles et analyse spatiale - M. Guérois</a></li>
+</ul>
+</li>
+<li><a href="#Questions-et-ressources-générales-sur-l’utilisation-de-R" title="Questions et ressources générales sur l’utilisation de R">Questions et ressources générales sur l’utilisation de R</a><ul class="nav">
+<li><a href="#Demander-de-l’aide-ou-du-support" title="Demander de l’aide ou du support">Demander de l’aide ou du support</a></li>
+<li><a href="#Journal" title="Journal">Journal</a></li>
+<li><a href="#Utiliser-des-programmes-et-pkgs-R-anciens" title="Utiliser des programmes et pkgs R anciens">Utiliser des programmes et pkgs R anciens</a></li>
+<li><a href="#Le-pipe-R--gt" title="Le pipe R : %>%">Le pipe R : %&gt;%</a></li>
+<li><a href="#Retrouver-le-dépôt-Github-associé-à-un-html" title="Retrouver le dépôt Github associé à un html">Retrouver le dépôt Github associé à un html</a></li>
+<li><a href="#Projet-Rzine" title="Projet Rzine">Projet Rzine</a><ul class="nav">
+<li><a href="#Ressources1" title="Ressources">Ressources</a></li>
+<li><a href="#Publications---Fiche-Rzine" title="Publications - Fiche Rzine">Publications - Fiche Rzine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Jeudi-1-juillet" title="Jeudi 1 juillet">Jeudi 1 juillet</a><ul class="nav">
+<li><a href="#Thierry-Feuillet--Atelier-analyse-spatiale-GWR" title="Thierry Feuillet : Atelier analyse spatiale (GWR)">Thierry Feuillet : Atelier analyse spatiale (GWR)</a><ul class="nav">
+<li><a href="#Etape-1-Modélisation" title="Etape 1. Modélisation">Etape 1. Modélisation</a></li>
+<li><a href="#Etape-2-analyse-des-résidus" title="Etape 2. analyse des résidus">Etape 2. analyse des résidus</a></li>
+<li><a href="#Etape-3-Modèle-GWR" title="Etape 3. Modèle GWR">Etape 3. Modèle GWR</a></li>
+<li><a href="#Etape-3---Etape-de-cartographie" title="Etape 3 - Etape de cartographie">Etape 3 - Etape de cartographie</a></li>
+<li><a href="#Etape-4-Régionalisation" title="Etape 4. Régionalisation">Etape 4. Régionalisation</a></li>
+</ul>
+</li>
+<li><a href="#Malika-Madelin--Analyse-d’images-Raster-et-télédetection" title="Malika Madelin : Analyse d’images Raster et télédetection">Malika Madelin : Analyse d’images Raster et télédetection</a><ul class="nav">
+<li><a href="#Sous-R-3-packages-“phares”" title="Sous R 3 packages “phares”">Sous R 3 packages “phares”</a></li>
+</ul>
+</li>
+<li><a href="#Timothée-G--mapsf" title="Timothée G. : mapsf">Timothée G. : mapsf</a><ul class="nav">
+<li><a href="#Contexte-de-développement" title="Contexte de développement">Contexte de développement</a></li>
+<li><a href="#Nouvelles-fonctionnalités-par-rapport-à-cartography" title="Nouvelles fonctionnalités** par rapport à {cartography}">Nouvelles fonctionnalités** par rapport à {cartography}</a></li>
+<li><a href="#Associés-au-package-" title="Associés au  package** :">Associés au  package** :</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Vendredi-2-juillet" title="Vendredi 2 juillet">Vendredi 2 juillet</a></li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>

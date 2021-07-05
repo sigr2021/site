@@ -58,7 +58,7 @@ Helbich, M., Brunauer, W., Hagenauer, J., & Leitner, M. (2013). Data-driven regi
 
 ## Analyse d'image et télédétection  {.active}
 
-### <i class="fas fa-window-restore"></i>   
+### <i class="fas fa-window-restore"></i> [Analyse d’images raster (et télédétection)](https://mmadelin.github.io/sigr2021/SIGR2021_raster_MM.html)  
 <i class="fas fa-user"></i> <a href="http://www.prodig.cnrs.fr/spip.php?article1589">Malika Madelin (UMR PRODIG - Universit&eacute; de Paris)</a>
 </br></br>
 
