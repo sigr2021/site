@@ -43,7 +43,7 @@ Le premier chapitre de Lovelace, R., Nowosad, J., & Muenchow, J. (2019). *Geocom
 
 ## Analyse spatiale 
 
-### <i class="fas fa-window-restore"></i>
+### <i class="fas fa-window-restore"></i> [Sciences reproductibles et analyse spatiale : quelques lectures et retours d’expérience](Seance_SIGR_30062021_MG.pdf)
 <i class="fas fa-user"></i> <a href="https://www.parisgeo.cnrs.fr/spip.php?article127&amp;lang=fr">Marianne Gu&eacute;rois (UMR G&eacute;ographie-cit&eacute;s - Universit&eacute; de Paris)</a>  
 <font color = "red">A lire avant le cours :   </font>  
 Kedron P., Frazier A., Trgovac A., Nelson T., Fotheringham S., 2019, "Reproducibility and Replicability in Geographical Analysis", *Geographical Analysis*, Volume 53, Issue 1. https://doi.org/10.1111/gean.12221
